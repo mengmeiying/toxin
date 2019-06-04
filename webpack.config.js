@@ -8,8 +8,14 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var isProduction = (process.env.NODE_ENV ==='production');
+
+const PATHS = {
+    source: path.join(__dirname, 'src'),
+    build: path.join(__dirname, 'build')
+};
 
 //module settings
 module.exports = {
@@ -90,6 +96,15 @@ module.exports = {
                 test: /\.svg$/,
                 loader: 'svg-url-loader',
             },
+
+            //pug
+            {
+                test: /\.pug$/,
+                loader: 'pug-loader',
+                options: {
+                    pretty: true,
+                }
+            }
         ],
     },
 
@@ -113,8 +128,12 @@ module.exports = {
                     {glob:'svg/*'},
                 ]
             }
-        )
+        ),
+        new HtmlWebpackPlugin({
+            template: PATHS.source + '/index.pug',
+        })
     ]
+    
 };
 
 //prod only
