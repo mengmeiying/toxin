@@ -13,8 +13,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 var isProduction = (process.env.NODE_ENV ==='production');
 
 const PATHS = {
-    source: path.join(__dirname, 'src'),
-    build: path.join(__dirname, 'build')
+    source: path.join(__dirname, 'src')
 };
 
 //module settings
@@ -31,7 +30,7 @@ module.exports = {
     output: {
         filename: 'js/[name].js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '../'
+        publicPath: './'
     },
 
     //devserver config

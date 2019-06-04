@@ -1,0 +1,32 @@
+.main-header__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-header-logo{
+    height: 13px;
+    width: 53px;
+}
+
+.main-nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-nav-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+
+.main-nav-list__item{
+    margin: 0 15px;
+}
+
+.main-login-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
