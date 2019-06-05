@@ -1,2 +1,24 @@
 @import "header.scss";
 @import "button.scss";
+@import "fonts.scss";
+@import "footer.scss";
+
+
+body{
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e5e5;
+    align-items: center;
+}
+
+.header__container{
+    margin-bottom: 40px;
+    width: 1440px;
+}
+
+.footer__container{
+    margin-bottom: 40px;
+    background-color: #fff;
+    width: 1440px;
+}

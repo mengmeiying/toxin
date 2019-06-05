@@ -45,6 +45,7 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
+                    publicPath: '../',
                     use:[
                         {
                             loader: 'css-loader',
@@ -55,9 +56,15 @@ module.exports = {
                             options: { sourceMap: true}
                         },
                         {
-                            loader: 'sass-loader',
+                            loader: 'resolve-url-loader',
                             options: { sourceMap: true}
                         },
+                        {
+                            loader: 'sass-loader',
+                            options: { sourceMap: true,
+                                    sourceMapContents: false}
+                        },
+                        
                     ],
                     fallback: 'style-loader',
                 })
@@ -129,7 +136,7 @@ module.exports = {
             }
         ),
         new HtmlWebpackPlugin({
-            template: PATHS.source + '/index.pug',
+            template: PATHS.source + '/pug/index.pug',
         })
     ]
     
