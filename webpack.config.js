@@ -101,6 +101,7 @@ module.exports = {
             {
                 test: /\.svg$/,
                 loader: 'svg-url-loader',
+                options: { sourceMap: true},
             },
 
             //pug
@@ -136,7 +137,8 @@ module.exports = {
             }
         ),
         new HtmlWebpackPlugin({
-            template: PATHS.source + '/pug/index.pug',
+            template: PATHS.source + '/pug/headersfooters.pug',
+            filename: path.resolve(__dirname, 'docs/headersfooters.html'),
         })
     ]
     
