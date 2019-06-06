@@ -86,7 +86,7 @@ module.exports = {
 
             //fonts
             {
-                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -98,11 +98,11 @@ module.exports = {
             },
 
             //svg
-            {
-                test: /\.svg$/,
-                loader: 'svg-url-loader',
-                options: { sourceMap: true},
-            },
+            // {
+            //     test: /\.svg$/,
+            //     loader: 'svg-url-loader',
+            //     options: { sourceMap: true},
+            // },
 
             //pug
             {
@@ -130,11 +130,11 @@ module.exports = {
             [
                 { from: './img', to: 'img'}
             ],
-            {
-                ignore: [
-                    {glob:'svg/*'},
-                ]
-            }
+            // {
+            //     ignore: [
+            //         {glob:'svg/*'},
+            //     ]
+            // }
         ),
         new HtmlWebpackPlugin({
             template: PATHS.source + '/pug/headersfooters.pug',

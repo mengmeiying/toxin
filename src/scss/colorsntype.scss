@@ -33,6 +33,35 @@
     left: -100px;
     background-color: #1F2041;
     position: absolute;
+    border-radius: 6px;
+}
+
+.colorsntype-colors__ds100::before{
+    background-color: #1F2041;
+}
+
+.colorsntype-colors__ds75::before{
+    background-color: rgba(31, 32, 65, 0.75);
+}
+
+.colorsntype-colors__ds50::before{
+    background-color: rgba(31, 32, 65, 0.5);
+}
+
+.colorsntype-colors__ds25::before{
+    background-color: rgba(31, 32, 65, 0.25);
+}
+
+.colorsntype-colors__ds5::before{
+    background-color: rgba(31, 32, 65, 0.05);
+}
+
+.colorsntype-colors__purple::before{
+    background-color: #BC9CFF;
+}
+
+.colorsntype-colors__green::before{
+    background-color: #6FCF97;
 }
 
 .colorsntype-text__h1{
@@ -77,4 +106,8 @@
     content: "P";
     left: -50px;
     color: rgba(31, 32, 65, 0.25);
+}
+
+.colorsntype-text__item{
+    margin-bottom: 50px;
 }
