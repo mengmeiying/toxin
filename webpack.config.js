@@ -139,6 +139,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: PATHS.source + '/pug/headersfooters.pug',
             filename: path.resolve(__dirname, 'docs/headersfooters.html'),
+        }),
+        new HtmlWebpackPlugin({
+            template: PATHS.source + '/pug/colorsntype.pug',
+            filename: path.resolve(__dirname, 'docs/colorsntype.html'),
         })
     ]
     
