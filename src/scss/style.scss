@@ -23,13 +23,12 @@ body{
 
 .header__container{
     margin-bottom: 40px;
-    width: 1440px;
+    
 }
 
 .footer__container{
     margin-bottom: 40px;
     background-color: #fff;
-    width: 1440px;
 }
 
 .footer-creative__container{
@@ -79,4 +78,8 @@ h4{
     padding: 0;
     margin: 0;
     color: #1F2041;
+}
+
+.main-img{
+    width: 1440px;
 }
