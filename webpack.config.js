@@ -152,7 +152,28 @@ module.exports = {
             template: PATHS.source + '/pug/index.pug',
             filename: path.resolve(__dirname, 'docs/index.html'),
         }),
+        new HtmlWebpackPlugin({
+            template: PATHS.source + '/pug/landingpage.pug',
+            filename: path.resolve(__dirname, 'docs/landingpage.html'),
+        }),
+        new HtmlWebpackPlugin({
+            template: PATHS.source + '/pug/searchroom.pug',
+            filename: path.resolve(__dirname, 'docs/searchroom.html'),
+        }),
+        new HtmlWebpackPlugin({
+            template: PATHS.source + '/pug/roomdetails.pug',
+            filename: path.resolve(__dirname, 'docs/roomdetails.html'),
+        }),
+        new HtmlWebpackPlugin({
+            template: PATHS.source + '/pug/registration.pug',
+            filename: path.resolve(__dirname, 'docs/registration.html'),
+        }),
+        new HtmlWebpackPlugin({
+            template: PATHS.source + '/pug/signin.pug',
+            filename: path.resolve(__dirname, 'docs/signin.html'),
+        }),
     ]
+    
     
 };
 
