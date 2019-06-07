@@ -13,3 +13,19 @@
 	font-weight: bold;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url('../fonts/Quicksand-Bold.eot');
+	src: local('☺'), url('../fonts/Quicksand-Bold.woff') format('woff'), url('../fonts/Quicksand-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url('../fonts/Quicksand-Regular.eot');
+	src: local('☺'), url('../fonts/Quicksand-Regular.woff') format('woff'), url('../fonts/Quicksand-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
