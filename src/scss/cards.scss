@@ -1,0 +1,24 @@
+.findnumber__container{
+    width: 320px;
+    background-color: #fff;
+    padding: 40px 30px 30px 30px;
+}
+
+.bronecard__container{
+    width: 320px;
+    background-color: #fff;
+    padding: 40px 30px 30px 30px;
+}
+
+.calendarcard__container{
+    width: 320px;
+    background-color: #fff;
+    height: 300px;
+    padding: 40px 30px 30px 30px;
+    /*высота тут пока не вставим календарь*/ 
+}
+
+.cards__container{
+    display: flex;
+    flex-wrap: wrap;
+}
