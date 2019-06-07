@@ -169,10 +169,6 @@ module.exports = {
             filename: path.resolve(__dirname, 'docs/registration.html'),
         }),
         new HtmlWebpackPlugin({
-            template: PATHS.source + '/pug/signin.pug',
-            filename: path.resolve(__dirname, 'docs/signin.html'),
-        }),
-        new HtmlWebpackPlugin({
             template: PATHS.source + '/pug/cards.pug',
             filename: path.resolve(__dirname, 'docs/cards.html'),
         }),
