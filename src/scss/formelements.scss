@@ -1,0 +1,11 @@
+.formelements__container{
+    display: flex;
+    background-color: #fff;
+    width: 1160px;
+    padding: 143px 140px 132px;
+    flex-wrap: wrap;
+}
+
+.formelements__container div{
+    max-width: 320px;
+}
