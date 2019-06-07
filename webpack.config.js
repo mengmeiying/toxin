@@ -147,7 +147,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: PATHS.source + '/pug/formelements.pug',
             filename: path.resolve(__dirname, 'docs/formelements.html'),
-        })
+        }),
+        new HtmlWebpackPlugin({
+            template: PATHS.source + '/pug/index.pug',
+            filename: path.resolve(__dirname, 'docs/index.html'),
+        }),
     ]
     
 };

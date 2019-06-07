@@ -1,11 +1,105 @@
+@import 'vars.scss';
+
 .formelements__container{
     display: flex;
     background-color: #fff;
     width: 1160px;
     padding: 143px 140px 132px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .formelements__container div{
     max-width: 320px;
+}
+
+input[type="text"]{
+    width: 320px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.25);
+}
+
+input[type="date"]{
+    width: 320px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.25);
+    text-transform: uppercase;  
+}
+
+input[type="email"]{
+    width: 320px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.25);
+    text-transform: uppercase;  
+}
+
+select{
+    width: 320px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+hr{
+    border-color: rgba(31, 32, 65, 0.1);
+}
+
+.formelements-comfort__smile{
+    position: relative;
+    margin-left: 60px;
+}
+
+.formelements-comfort__smile::before{
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 48px;
+    left: -50px;
+
+    background: url("../img/insert_emoticon.png") 0 0 no-repeat;
+}
+
+.formelements-comfort__building{
+    position: relative;
+    margin-left: 60px;
+}
+
+.formelements-comfort__building::before{
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 48px;
+    left: -50px;
+
+    background: url("../img/location_city.png") 0 0 no-repeat;
+}
+
+.formelements-feedback__avatar{
+    position: relative;
+    margin-left: 60px;
+}
+
+.formelements-feedback__avatar::before{
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 48px;
+    left: -55px;
+
+    background: url("../img/avatar.png") -20px -10px no-repeat;
 }

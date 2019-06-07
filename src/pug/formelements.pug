@@ -9,7 +9,7 @@ html(lang="en")
         .formelements__container
             .formelements-textfield__contalner
                 h3 Text field
-                input(type="text")
+                input(type="text" value="email")
                 h3 Text Field
                 input(type="text")
                 h3 Dropdown
@@ -34,15 +34,18 @@ html(lang="en")
                 input(type="checkbox" checked) 
                 p Можно пригласить гостей (до 10 человек)
                 h3 Radio buttons
-                input(type="radio" checked)
+                input(type="radio" name="gender")
                 p Мужчина
-                input(type="radio")
+                input(type="radio" name="gender" checked)
                 p Женщина
                 h3 Toggle
                 input(type="radio")
                 p Получать спецпредложения
                 input(type="radio")
                 p Получать спецпредложения
+                h3 Like Button
+                button 2
+                button 12
                 h3 Rate button 
                 //тут будут звёздочки  
             .formelements-buttons__container
@@ -58,6 +61,9 @@ html(lang="en")
                 button.button Перейти к оплате
                 h3 Paginaion
                 button.button 1
+                span ...
+                button.button 15
+
                 p 1 - 12 из 100+ вариантов аренды
             .formelements-dropdown__container
                 h3 Dropdown
@@ -78,19 +84,27 @@ html(lang="en")
                 h3 Expandable checkbox list
                 h3 Expandable checkbox list
                 input(type="checkbox")
+                label Завтрак
                 input(type="checkbox" checked)
+                label Письменный стол
                 input(type="checkbox" checked)
+                label Стул для кормления
                 input(type="checkbox" checked)
+                label Кроватка
                 input(type="checkbox")
+                label Телевизор
                 input(type="checkbox")
+                label Шампунь
                 input(type="checkbox")
+                label Телевизор
                 input(type="checkbox")
+                label Шампунь
             .formelements-rich__container
                 h3 Rich checkbox buttons
                 input(type="checkbox")
-                p Широкий коридор 
+                h4 Широкий коридор 
                 input(type="checkbox")
-                p Помощник для инвалидов
+                h4 Помощник для инвалидов
             .formelements-bullet__container
                 input(type="radio")
                 p Нельзя с питомцами
@@ -99,13 +113,18 @@ html(lang="en")
                 input(type="radio")
                 p Время прибытия - после 13:00, а выезд до 12:00
             .formelements-comfort__container
-                p Комфорт
-                p Шумопоглощающие стены
-                p Удобство
-                p Окно в каждой из спален
+                .formelements-comfort__smile
+                    h4 Комфорт
+                    p Шумопоглощающие стены
+                hr
+                .formelements-comfort__building
+                    h4 Удобство
+                    p Окно в каждой из спален
+                hr
             .formelements-feedback__container
-                p Мурад Сарафанов 
-                p 5 дней назад 
+                .formelements-feedback__avatar
+                    h4 Мурад Сарафанов 
+                    p 5 дней назад 
                 p.
                     Великолепный матрас на кровати в основной 
                     спальне! А пуфик вообще потрясающий. 

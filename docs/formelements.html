@@ -10,7 +10,7 @@
     <div class="formelements__container">
       <div class="formelements-textfield__contalner">
         <h3>Text field</h3>
-        <input type="text">
+        <input type="text" value="email">
         <h3>Text Field</h3>
         <input type="text">
         <h3>Dropdown</h3>
@@ -37,15 +37,18 @@
         <input type="checkbox" checked>
         <p>Можно пригласить гостей (до 10 человек)</p>
         <h3>Radio buttons</h3>
-        <input type="radio" checked>
+        <input type="radio" name="gender">
         <p>Мужчина</p>
-        <input type="radio">
+        <input type="radio" name="gender" checked>
         <p>Женщина</p>
         <h3>Toggle</h3>
         <input type="radio">
         <p>Получать спецпредложения</p>
         <input type="radio">
         <p>Получать спецпредложения</p>
+        <h3>Like Button</h3>
+        <button>2</button>
+        <button>12</button>
         <h3>Rate button </h3>
         <!--тут будут звёздочки  -->
       </div>
@@ -61,7 +64,8 @@
         <button class="button">Click me</button>
         <button class="button">Перейти к оплате</button>
         <h3>Paginaion</h3>
-        <button class="button">1</button>
+        <button class="button">1</button><span>...</span>
+        <button class="button">15</button>
         <p>1 - 12 из 100+ вариантов аренды</p>
       </div>
       <div class="formelements-dropdown__container">
@@ -92,20 +96,28 @@
         <h3>Expandable checkbox list</h3>
         <h3>Expandable checkbox list</h3>
         <input type="checkbox">
+        <label>Завтрак</label>
         <input type="checkbox" checked>
+        <label>Письменный стол</label>
         <input type="checkbox" checked>
+        <label>Стул для кормления</label>
         <input type="checkbox" checked>
+        <label>Кроватка</label>
         <input type="checkbox">
+        <label>Телевизор</label>
         <input type="checkbox">
+        <label>Шампунь</label>
         <input type="checkbox">
+        <label>Телевизор</label>
         <input type="checkbox">
+        <label>Шампунь</label>
       </div>
       <div class="formelements-rich__container">
         <h3>Rich checkbox buttons</h3>
         <input type="checkbox">
-        <p>Широкий коридор </p>
+        <h4>Широкий коридор </h4>
         <input type="checkbox">
-        <p>Помощник для инвалидов</p>
+        <h4>Помощник для инвалидов</h4>
       </div>
       <div class="formelements-bullet__container">
         <input type="radio">
@@ -116,14 +128,22 @@
         <p>Время прибытия - после 13:00, а выезд до 12:00</p>
       </div>
       <div class="formelements-comfort__container">
-        <p>Комфорт</p>
-        <p>Шумопоглощающие стены</p>
-        <p>Удобство</p>
-        <p>Окно в каждой из спален</p>
+        <div class="formelements-comfort__smile">
+          <h4>Комфорт</h4>
+          <p>Шумопоглощающие стены</p>
+        </div>
+        <hr>
+        <div class="formelements-comfort__building">
+          <h4>Удобство</h4>
+          <p>Окно в каждой из спален</p>
+        </div>
+        <hr>
       </div>
       <div class="formelements-feedback__container">
-        <p>Мурад Сарафанов </p>
-        <p>5 дней назад </p>
+        <div class="formelements-feedback__avatar">
+          <h4>Мурад Сарафанов </h4>
+          <p>5 дней назад </p>
+        </div>
         <p>
           Великолепный матрас на кровати в основной 
           спальне! А пуфик вообще потрясающий. 
