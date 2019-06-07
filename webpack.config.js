@@ -143,6 +143,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: PATHS.source + '/pug/colorsntype.pug',
             filename: path.resolve(__dirname, 'docs/colorsntype.html'),
+        }),
+        new HtmlWebpackPlugin({
+            template: PATHS.source + '/pug/formelements.pug',
+            filename: path.resolve(__dirname, 'docs/formelements.html'),
         })
     ]
     
