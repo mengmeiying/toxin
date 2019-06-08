@@ -21,4 +21,23 @@
 .cards__container{
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.registrationcard__container{
+    width: 320px;
+    background-color: #fff;
+    padding: 40px 30px 30px 30px;
+}
+
+.signincard__container{
+    width: 320px;
+    background-color: #fff;
+    padding: 40px 30px 30px 30px;
+}
+
+.smallcard__container{
+    width: 270px;
+    height: 257px;
+    background-color: #fff;
 }
