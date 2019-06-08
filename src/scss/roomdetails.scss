@@ -10,7 +10,28 @@
     display: flex;
 }
 
-.room__comtainer-left{
+.room__container-left{
     display: flex;
     flex-wrap: wrap;
+}
+
+.room-info__container{
+    width: 280px;
+    margin-right: 70px;
+    margin-bottom: 30px;
+}
+
+.room-feedback__container{
+    margin-bottom: 30px;
+    width: 710px; 
+    margin-right: 70px;
+}
+
+.room-rules__container{
+    width: 270px;
+    margin-right: 70px;
+}
+
+.room-cancel__container{
+    width: 340px;
 }
