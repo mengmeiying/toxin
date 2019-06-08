@@ -115,3 +115,18 @@ input[type="password"]{
     line-height: 24px;
     color: rgba(31, 32, 65, 0.25);
 }
+
+.formelements-comfort__fire{
+    position: relative;
+    margin-left: 60px;
+}
+
+.formelements-comfort__fire::before{
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 48px;
+    left: -50px;
+
+    background: url("../img/fire.png") 0 0 no-repeat;
+}
