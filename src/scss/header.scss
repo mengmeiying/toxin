@@ -17,7 +17,9 @@
 .main-nav{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
+
 
 .main-nav-list{
     display: flex;

@@ -23,8 +23,6 @@
     content:"";
     width: 24px;
     height: 24px;
-    border: 2px solid #BC9CFF;
-    border-radius: 50%;
     
     top: 0;
     left: -30px;
@@ -34,4 +32,17 @@
     list-style: none;
     display: flex;
 
+}
+
+
+.main-footer-creative__socials-link.tw::before{
+    background: url("../img/tw.png") 0 0 no-repeat;
+}
+
+.main-footer-creative__socials-link.fb::before{
+    background: url("../img/fb.png") 0 0 no-repeat;
+}
+
+.main-footer-creative__socials-link.ig::before{
+    background: url("../img/ig.png") 0 0 no-repeat;
 }

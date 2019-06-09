@@ -90,8 +90,6 @@
     content:"";
     width: 24px;
     height: 24px;
-    border: 2px solid #BC9CFF;
-    border-radius: 50%;
     
     top: 0;
     left: -30px;
@@ -99,4 +97,16 @@
 
 .main-footer__copyright-text{
     font-size: 14px;
+}
+
+.main-footer__socials-link.tw::before{
+    background: url("../img/tw.png") 0 0 no-repeat;
+}
+
+.main-footer__socials-link.fb::before{
+    background: url("../img/fb.png") 0 0 no-repeat;
+}
+
+.main-footer__socials-link.ig::before{
+    background: url("../img/ig.png") 0 0 no-repeat;
 }
