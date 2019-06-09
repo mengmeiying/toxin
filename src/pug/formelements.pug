@@ -6,131 +6,133 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Form Elements
     body
-        .formelements__container
-            .formelements-textfield__contalner
-                h3 Text field
-                input(type="text" value="email")
-                h3 Text Field
-                input(type="text")
-                h3 Dropdown
-                select
-                    option Сколько гостей
-                h3 Masked text field
-                input(type="date")
-                h3 Date dropdown
-                input(type="date")
-                h3 Date dropdown
-                input(type="date")
-                h3 Input date dropdown
-                input(type="date")
-                h3 Subscription text field
-                input(type="email")
-            .formelements-checkbox__container
-                h3 Checkbox buttons
-                input(type="checkbox") 
-                p Можно курить
-                input(type="checkbox" checked) 
-                p Можно с питомцами
-                input(type="checkbox" checked) 
-                p Можно пригласить гостей (до 10 человек)
-                h3 Radio buttons
-                input(type="radio" name="gender")
-                p Мужчина
-                input(type="radio" name="gender" checked)
-                p Женщина
-                h3 Toggle
-                input(type="radio")
-                p Получать спецпредложения
-                input(type="radio")
-                p Получать спецпредложения
-                h3 Like Button
-                button 2
-                button 12
-                h3 Rate button 
-                //тут будут звёздочки  
-            .formelements-buttons__container
-                h3 Range button
-                input(type="range")
-                h3 Buttons
-                button.button Click me
-                button.button Click me
-                button.button Click me
-                button.button Click me
-                button.button Click me
-                button.button Click me
-                button.button Перейти к оплате
-                h3 Paginaion
-                button.button 1
-                span ...
-                button.button 15
-
-                p 1 - 12 из 100+ вариантов аренды
-            .formelements-dropdown__container
-                h3 Dropdown
-                select
-                    option 2 спальни, 2 кровати... 
-                h3 Dropdown
-                select
-                    option 2 спальни, 2 кровати... 
-            .formelements-dropdown__container
-                h3 Dropdown
+        .formelements__container-big
+            include top-logo.pug
+            .formelements__container
+                .formelements-textfield__contalner
+                    h3 Text field
+                    input(type="text" value="email")
+                    h3 Text Field
+                    input(type="text")
+                    h3 Dropdown
                     select
                         option Сколько гостей
-                        option 1 гость
-                        option 2 гостя
-                        option 3 гостя
-            .formelements-dropdown__container
-                h3 Dropdown
+                    h3 Masked text field
+                    input(type="date")
+                    h3 Date dropdown
+                    input(type="date")
+                    h3 Date dropdown
+                    input(type="date")
+                    h3 Input date dropdown
+                    input(type="date")
+                    h3 Subscription text field
+                    input(type="email")
+                .formelements-checkbox__container
+                    h3 Checkbox buttons
+                    input(type="checkbox") 
+                    p Можно курить
+                    input(type="checkbox" checked) 
+                    p Можно с питомцами
+                    input(type="checkbox" checked) 
+                    p Можно пригласить гостей (до 10 человек)
+                    h3 Radio buttons
+                    input(type="radio" name="gender")
+                    p Мужчина
+                    input(type="radio" name="gender" checked)
+                    p Женщина
+                    h3 Toggle
+                    input(type="radio")
+                    p Получать спецпредложения
+                    input(type="radio")
+                    p Получать спецпредложения
+                    h3 Like Button
+                    button 2
+                    button 12
+                    h3 Rate button 
+                    //тут будут звёздочки  
+                .formelements-buttons__container
+                    h3 Range button
+                    input(type="range")
+                    h3 Buttons
+                    button.button Click me
+                    button.button Click me
+                    button.button Click me
+                    button.button Click me
+                    button.button Click me
+                    button.button Click me
+                    button.button Перейти к оплате
+                    h3 Paginaion
+                    button.button 1
+                    span ...
+                    button.button 15
+
+                    p 1 - 12 из 100+ вариантов аренды
+                .formelements-dropdown__container
+                    h3 Dropdown
                     select
-                        option 3 гостя
-            .formelements-checkbox__container
-                h3 Expandable checkbox list
-                h3 Expandable checkbox list
-                input(type="checkbox")
-                label Завтрак
-                input(type="checkbox" checked)
-                label Письменный стол
-                input(type="checkbox" checked)
-                label Стул для кормления
-                input(type="checkbox" checked)
-                label Кроватка
-                input(type="checkbox")
-                label Телевизор
-                input(type="checkbox")
-                label Шампунь
-                input(type="checkbox")
-                label Телевизор
-                input(type="checkbox")
-                label Шампунь
-            .formelements-rich__container
-                h3 Rich checkbox buttons
-                input(type="checkbox")
-                h4 Широкий коридор 
-                input(type="checkbox")
-                h4 Помощник для инвалидов
-            .formelements-bullet__container
-                input(type="radio")
-                p Нельзя с питомцами
-                input(type="radio")
-                p Без вечеринок и мероприятий
-                input(type="radio")
-                p Время прибытия - после 13:00, а выезд до 12:00
-            .formelements-comfort__container
-                .formelements-comfort__smile
-                    h4 Комфорт
-                    p Шумопоглощающие стены
-                hr
-                .formelements-comfort__building
-                    h4 Удобство
-                    p Окно в каждой из спален
-                hr
-            .formelements-feedback__container
-                .formelements-feedback__avatar
-                    h4 Мурад Сарафанов 
-                    p 5 дней назад 
-                p.
-                    Великолепный матрас на кровати в основной 
-                    спальне! А пуфик вообще потрясающий. 
-                    И стены, действительно, шумоподавляющие. 
-                    Выкрикивал комплименты повару — никто 
-                    не жаловался из соседей.
+                        option 2 спальни, 2 кровати... 
+                    h3 Dropdown
+                    select
+                        option 2 спальни, 2 кровати... 
+                .formelements-dropdown__container
+                    h3 Dropdown
+                        select
+                            option Сколько гостей
+                            option 1 гость
+                            option 2 гостя
+                            option 3 гостя
+                .formelements-dropdown__container
+                    h3 Dropdown
+                        select
+                            option 3 гостя
+                .formelements-checkbox__container
+                    h3 Expandable checkbox list
+                    h3 Expandable checkbox list
+                    input(type="checkbox")
+                    label Завтрак
+                    input(type="checkbox" checked)
+                    label Письменный стол
+                    input(type="checkbox" checked)
+                    label Стул для кормления
+                    input(type="checkbox" checked)
+                    label Кроватка
+                    input(type="checkbox")
+                    label Телевизор
+                    input(type="checkbox")
+                    label Шампунь
+                    input(type="checkbox")
+                    label Телевизор
+                    input(type="checkbox")
+                    label Шампунь
+                .formelements-rich__container
+                    h3 Rich checkbox buttons
+                    input(type="checkbox")
+                    h4 Широкий коридор 
+                    input(type="checkbox")
+                    h4 Помощник для инвалидов
+                .formelements-bullet__container
+                    input(type="radio")
+                    p Нельзя с питомцами
+                    input(type="radio")
+                    p Без вечеринок и мероприятий
+                    input(type="radio")
+                    p Время прибытия - после 13:00, а выезд до 12:00
+                .formelements-comfort__container
+                    .formelements-comfort__smile
+                        h4 Комфорт
+                        p Шумопоглощающие стены
+                    hr
+                    .formelements-comfort__building
+                        h4 Удобство
+                        p Окно в каждой из спален
+                    hr
+                .formelements-feedback__container
+                    .formelements-feedback__avatar
+                        h4 Мурад Сарафанов 
+                        p 5 дней назад 
+                    p.
+                        Великолепный матрас на кровати в основной 
+                        спальне! А пуфик вообще потрясающий. 
+                        И стены, действительно, шумоподавляющие. 
+                        Выкрикивал комплименты повару — никто 
+                        не жаловался из соседей.

@@ -2,11 +2,15 @@
 
 .formelements__container{
     display: flex;
-    background-color: #fff;
-    width: 1160px;
-    padding: 143px 140px 132px;
+    margin-top: 70px;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.formelements__container-big{
+    background-color: #fff;
+    width: 1160px;
+    padding: 30px 30px 132px 140px;
 }
 
 .formelements__container div{
