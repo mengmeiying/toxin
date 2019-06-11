@@ -1,14 +1,15 @@
-let login = document.querySelector(".main-login-list__login");
-let register = document.querySelector(".main-login-list__register");
-let registerCard = document.querySelector(".header__container-registration");
-let loginCard = document.querySelector(".header__container-signin");
-
-login.onclick = function(){
-    loginCard.style.display = "block";
-    registerCard.style.display = "none";
-}
-
-register.onclick = function(){
-    registerCard.style.display = "block";
-    loginCard.style.display = "none";
-}
+var app = (function () {
+  
+    var importedModuleA = require('./datepicker.js');
+    var importedModuleA = require('./test.js');
+    var importedModuleC = require('./register.js');
+    
+    return {
+      moduleA : importedModuleA,
+      moduleB : importedModuleB,
+      moduleB : importedModuleC,
+    }
+    
+  })();
+  
+  module.exports = app;

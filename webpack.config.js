@@ -28,7 +28,7 @@ module.exports = {
     },
 
     output: {
-        filename: 'js/[name].js',
+        filename: 'js/[name]1.js',
         path: path.resolve(__dirname, 'docs'),
         publicPath: './'
     },
@@ -180,11 +180,11 @@ module.exports = {
 //prod only
 
 if(isProduction) {
-    module.exports.plugins.push(
-        new UglifyJSPlugin({
-            sourceMap: true
-        }),
-    );
+    // module.exports.plugins.push(
+    //     new UglifyJSPlugin({
+    //         sourceMap: true
+    //     }),
+    // );
     module.exports.plugins.push(
         new ImageminPlugin({
             test: /\.(png|jpe?g|gif|svg)$/
