@@ -45,6 +45,8 @@
   "dependencies": {
     "air-datepicker": "^2.2.3",
     "autoprefixer": "^9.6.0",
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "material-design-icons": "^3.0.1",
+    "normalize.css": "^8.0.1"
   }
 }

@@ -57,6 +57,11 @@ select{
     width: 320px;
     height: 44px;
     border: 1px solid rgba(31, 32, 65, 0.25);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 hr{
@@ -147,4 +152,37 @@ input[type="password"]{
     left: -50px;
 
     background: url("../img/fire.png") 0 0 no-repeat;
+}
+
+.star-full::before{
+    content:"★ ";
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+input[type="range"]{
+    width: 266px;
+}
+
+.formelements-textfield__container{
+    margin-right: 120px;
+    margin-bottom: 100px;
+}
+
+.formelements-checkbox__container{
+    margin-right: 130px;
+    margin-bottom: 100px;
+    width: 260px;
+}
+
+.formelements-dropdown__container{
+    margin-right: 180px;
+}
+
+.formelements-dropdown__container2{
+    margin-right: 70px;
 }
