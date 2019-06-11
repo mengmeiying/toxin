@@ -2,15 +2,17 @@
     h1 Регистрация аккаунта
     input(type="text")
     input(type="text")
-    input(type="radio" name="gender")
-    p Мужчина
-    input(type="radio" name="gender" checked)
-    p Женщина
+    label
+        input(type="radio" name="gender")
+        span Мужчина
+    label
+        input(type="radio" name="gender" checked)
+        span Женщина
     label Дата рождения
-    input(type="date")
+        input(type="date")
     label Данные для входа в сервис
-    input(type="email")
-    input(type="password")
+        input(type="email")
+        input(type="password")
     p Получать спецпредложения
     button.button Перейти к оплате
     p Уже есть аккаунт на Toxin 
