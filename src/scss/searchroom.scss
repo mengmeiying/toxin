@@ -15,3 +15,14 @@
     width: 266px;
     margin-right: 60px;
 }
+
+.smallcard__container{
+    margin-right: 5px;
+    margin-bottom: 15px;
+    width: 270px;
+}
+
+.smallcard__container:nth-child(3n){
+    margin-right: 0;
+
+}
