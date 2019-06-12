@@ -53,13 +53,41 @@
         </div>
         <div class="room-impression__container">
           <h1>Впечатления от номера</h1>
-          <div class="donut"><span>260 голосов</span></div>
-          <ul> 
-            <li>Великолепно</li>
-            <li>Хорошо</li>
-            <li>Удовлетворительно</li>
-            <li>Разочарован</li>
-          </ul>
+          <figure>
+            <div class="figure-content"><svg width="120px" height="120px" viewBox="0 0 42 42" class="donut" aria-labelledby="beers-title beers-desc" role="img">
+      <title id="beers-title">Beers in My Cellar</title>
+      <desc id="beers-desc">Donut chart showing 10 total beers. Two beers are Imperial India Pale Ales, four beers are Belgian Quadrupels, and three are Russian Imperial Stouts. The last remaining beer is unlabeled.</desc>
+      <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff" role="presentation"></circle>
+      <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3" role="presentation"></circle>
+
+      <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#FFE39C" stroke-width="3" stroke-dasharray="50 50" stroke-dashoffset="75" aria-labelledby="donut-segment-1-title donut-segment-1-desc">
+        <title id="donut-segment-1-title">Великолепно</title>
+        <desc id="donut-segment-1-desc">Pink chart segment spanning 40% of the whole, which is 4 Belgian Quadrupels out of 10 total.</desc>
+      </circle>
+      <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#6FCF97" stroke-width="3" stroke-dasharray="25 75" stroke-dashoffset="0">
+        <title id="donut-segment-2-title">Хорошо</title>
+        <desc id="donut-segment-2-desc">Green chart segment spanning 20% of the whole, which is 2 Imperial India Pale Ales out of 10 total.</desc>
+      </circle>
+      <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#BC9CFF" stroke-width="3" stroke-dasharray="25 75" stroke-dashoffset="25">
+        <title id="donut-segment-3-title">Удовлетворительно</title>
+        <desc id="donut-segment-3-desc">Blue chart segment spanning 3% of the whole, which is 3 Russian Imperial Stouts out of 10 total.</desc>
+      </circle>
+      <g class="chart-text">
+        <text x="50%" y="50%" class="chart-number">
+          260
+        </text>
+        <text x="50%" y="50%" class="chart-label">
+          голосов
+        </text>
+      </g>
+            </div>
+            <ul class="figure-key-list" aria-hidden="true" role="presentation">
+              <li><span class="shape-circle shape-fuschia"></span><span>Великолепно</span></li>
+              <li><span class="shape-circle shape-lemon-lime"> </span><span>Хорошо</span></li>
+              <li><span class="shape-circle shape-blue"></span><span>Удовлетворительно</span></li>
+              <li><span class="shape-circle bad"></span><span>Разочарован</span></li>
+            </ul>
+          </figure>
         </div>
         <div class="room-feedback__container">
           <h1>Отзывы посетителей номера</h1>

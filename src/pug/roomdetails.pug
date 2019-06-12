@@ -30,13 +30,23 @@ html(lang="en")
                         p Номер оснащён камином
                 .room-impression__container
                     h1 Впечатления от номера
-                    .donut
-                        span 260 голосов
-                    ul 
-                        li Великолепно
-                        li Хорошо
-                        li Удовлетворительно
-                        li Разочарован
+                    figure
+                        .figure-content
+                            include ../img/donut.svg
+                        ul.figure-key-list(aria-hidden="true" role="presentation")
+                            li
+                                span.shape-circle.shape-fuschia
+                                span Великолепно
+                            li
+                                span.shape-circle.shape-lemon-lime 
+                                span Хорошо
+                            li
+                                span.shape-circle.shape-blue
+                                span Удовлетворительно
+                            li
+                                span.shape-circle.bad
+                                span Разочарован
+
                 .room-feedback__container
                     h1 Отзывы посетителей номера
                     .formelements-feedback__avatar
