@@ -13,9 +13,6 @@
     padding: 30px 30px 132px 140px;
 }
 
-.formelements__container div{
-    max-width: 320px;
-}
 
 input[type="text"]{
     width: 320px;
@@ -53,8 +50,19 @@ input[type="email"]{
     text-transform: uppercase;  
 }
 
-select{
+.select-guests{
     width: 320px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.select-rooms{
+    width: 266px;
     height: 44px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     font-family: 'Montserrat';
@@ -127,6 +135,11 @@ hr{
 
     background: url("../img/avatar2.png") -20px -10px no-repeat;
 }
+
+.formelements-feedback__container{
+    width: 710px;
+}
+
 input[type="password"]{
     width: 320px;
     height: 44px;
@@ -248,3 +261,27 @@ input[type="range"]{
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .formelements-buttons__container{
+      max-width: 320px;
+  }
+
+    .formelements-dropdown__container1{
+        max-width: 320px;
+    }
+
+    .formelements-dropdown__container2{
+        max-width: 320px;
+    }
+
+    .formelements-dropdown__container3{
+        max-width: 320px;
+    }
+
+    .formelements-rich__container{
+        max-width: 320px;
+    }
+
+    .formelements-bullet__container{
+        max-width: 320px;
+    }
