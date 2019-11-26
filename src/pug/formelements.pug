@@ -10,40 +10,41 @@ html(lang="en")
         //- script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
         title Form Elements
     body
-        .formelements__container-big
+        .formelements__logo-container
             include top-logo.pug
+        .formelements__container-big
             .formelements__container
                 .formelements-textfield__container
                     h3 Text field
-                    input(type="text" value="email")
+                    input(type="text" value="Email").formelements-textfield__input
                     h3 Text Field
-                    input(type="text")
+                    input(type="text" value="This is pretty awesome").formelements-textfield__input
                     h3 Dropdown
-                    select
+                    select.formelements-textfield__input
                         option Сколько гостей
                     h3 Masked text field
-                    input(type="date")
+                    input(type="date").formelements-textfield__input
                     h3 Date dropdown
-                    input(type="date")
+                    input(type="date").formelements-textfield__input
                     h3 Date dropdown
-                    input(type="date")
+                    input(type="date").formelements-textfield__input
                     h3 Input date dropdown
-                    input(type="date")
+                    input(type="date").formelements-textfield__input
                     h3 Subscription text field
-                    input(type="email")
+                    input(type="email" value="Email").formelements-textfield__input
                 .formelements-checkbox__container
                     h3 Checkbox buttons
                     label 
                         input(type="checkbox") 
-                        span Можно курить
+                        span.formelements-checkbox__check Можно курить
                         br
                     label
                         input(type="checkbox" checked) 
-                        span Можно с питомцами
+                        span.formelements-checkbox__check Можно с питомцами
                         br
                     label
                         input(type="checkbox" checked) 
-                        span Можно пригласить гостей (до 10 человек)
+                        span.formelements-checkbox__check Можно пригласить гостей (до 10 человек)
 
                     h3 Radio buttons
                     label
@@ -82,18 +83,16 @@ html(lang="en")
                     span.star-full
                 .formelements-buttons__container
                     h3 Range button
-                    label(for="amount") Price range:
-                    input(type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;")
-                    div(id="slider-range")
+                    <div id="slider-range"></div>
 
                     h3 Buttons
                     button.button Click me
-                    button.button Click me
+                    button.button.disabled-button Click me
                     button.button.button-white Click me
-                    button.button.button-white Click me
-                    button.button Click me
-                    button.button Click me
-                    button.button Перейти к оплате
+                    button.button.button-white.disabled-button Click me
+                    button.button-text Click me
+                    button.button-text.button-disabled-text Click me
+                    button.button.pay-button Перейти к оплате
 
                     h3 Paginaion
                     button.button 1

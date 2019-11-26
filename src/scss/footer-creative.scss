@@ -8,6 +8,11 @@
     margin-bottom: 130px;
 }
 
+.main-footer-creative__container p{
+    width: 560px;
+    text-align: center;
+}
+
 .main-footer-creative__logo{
     width: 105px;
     height: 40px;
@@ -31,9 +36,8 @@
 .main-footer-creative__socials-list{
     list-style: none;
     display: flex;
-
+    padding-left: 0;
 }
-
 
 .main-footer-creative__socials-link.tw::before{
     background: url("../img/tw.png") 0 0 no-repeat;

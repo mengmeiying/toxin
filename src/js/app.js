@@ -1,15 +1,14 @@
 var app = (function () {
   
-    var importedModuleA = require('./datepicker.js');
     var importedModuleB = require('./register.js');
     var importedModuleC = require('./slider.js');
     
     return {
-      moduleA : importedModuleA,
+      moduleA : importedModuleC,
       moduleB : importedModuleB,
-      moduleC : importedModuleC,
     }
     
   })();
   
   module.exports = app;
+console.log("HEY WTF")

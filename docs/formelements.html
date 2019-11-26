@@ -7,44 +7,46 @@
     <title>Form Elements</title>
   <link href="././css/app.css" rel="stylesheet"></head>
   <body>
-    <div class="formelements__container-big">
+    <div class="formelements__logo-container">
 <div class="top-logo-container"><svg class="top-logo" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M23.9989 32.4712C23.2224 32.4712 22.5871 31.8359 22.5871 31.0594C22.5871 25.6241 18.14 21.177 12.7047 21.177C11.9283 21.177 11.293 20.5418 11.293 19.7653C11.293 18.9888 11.9283 18.3535 12.7047 18.3535C19.7283 18.3535 25.4106 24.0359 25.4106 31.0594C25.4106 31.8359 24.7753 32.4712 23.9989 32.4712Z" fill="#1F2041" fill-opacity="0.25"/>
 <path d="M36.7068 19.7653C36.7068 20.5418 36.0715 21.177 35.295 21.177C31.9421 21.177 28.9421 22.8712 27.1774 25.4476C26.7892 24.4594 26.3303 23.5418 25.7656 22.6947C28.095 20.0123 31.5186 18.3535 35.295 18.3535C36.0715 18.3535 36.7068 18.9888 36.7068 19.7653Z" fill="#1F2041" fill-opacity="0.25"/>
 <path d="M24 48C10.7647 48 0 37.2353 0 24C0 10.7647 10.7647 0 24 0C37.2353 0 48 10.7647 48 24C48 37.2353 37.2353 48 24 48ZM24 2.82353C12.3176 2.82353 2.82353 12.3176 2.82353 24C2.82353 35.6824 12.3176 45.1765 24 45.1765C35.6824 45.1765 45.1765 35.6824 45.1765 24C45.1765 12.3176 35.6824 2.82353 24 2.82353Z" fill="#1F2041" fill-opacity="0.25"/>
 </svg>
 </div>
+    </div>
+    <div class="formelements__container-big">
       <div class="formelements__container">
         <div class="formelements-textfield__container">
           <h3>Text field</h3>
-          <input type="text" value="email">
+          <input class="formelements-textfield__input" type="text" value="Email">
           <h3>Text Field</h3>
-          <input type="text">
+          <input class="formelements-textfield__input" type="text" value="This is pretty awesome">
           <h3>Dropdown</h3>
-          <select>
+          <select class="formelements-textfield__input">
             <option>Сколько гостей</option>
           </select>
           <h3>Masked text field</h3>
-          <input type="date">
+          <input class="formelements-textfield__input" type="date">
           <h3>Date dropdown</h3>
-          <input type="date">
+          <input class="formelements-textfield__input" type="date">
           <h3>Date dropdown</h3>
-          <input type="date">
+          <input class="formelements-textfield__input" type="date">
           <h3>Input date dropdown</h3>
-          <input type="date">
+          <input class="formelements-textfield__input" type="date">
           <h3>Subscription text field</h3>
-          <input type="email">
+          <input class="formelements-textfield__input" type="email" value="Email">
         </div>
         <div class="formelements-checkbox__container">
           <h3>Checkbox buttons</h3>
           <label> 
-            <input type="checkbox"><span>Можно курить</span><br>
+            <input type="checkbox"><span class="formelements-checkbox__check">Можно курить</span><br>
           </label>
           <label>
-            <input type="checkbox" checked><span>Можно с питомцами</span><br>
+            <input type="checkbox" checked><span class="formelements-checkbox__check">Можно с питомцами</span><br>
           </label>
           <label>
-            <input type="checkbox" checked><span>Можно пригласить гостей (до 10 человек)</span>
+            <input type="checkbox" checked><span class="formelements-checkbox__check">Можно пригласить гостей (до 10 человек)</span>
           </label>
           <h3>Radio buttons</h3>
           <label>
@@ -70,18 +72,15 @@
           <h3>Rate button </h3><span class="star-full"></span><span class="star-full"></span><span class="star-full"></span><span class="star-full"></span><span class="star-empty"> </span><span class="star-full"></span><span class="star-full"></span><span class="star-full"></span><span class="star-full"></span><span class="star-full"></span>
         </div>
         <div class="formelements-buttons__container">
-          <h3>Range button</h3>
-          <label for="amount">Price range:</label>
-          <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-          <div id="slider-range"></div>
+          <h3>Range button</h3><div id="slider-range"></div>
           <h3>Buttons</h3>
           <button class="button">Click me</button>
-          <button class="button">Click me</button>
+          <button class="button disabled-button">Click me</button>
           <button class="button button-white">Click me</button>
-          <button class="button button-white">Click me</button>
-          <button class="button">Click me</button>
-          <button class="button">Click me</button>
-          <button class="button">Перейти к оплате</button>
+          <button class="button button-white disabled-button">Click me</button>
+          <button class="button-text">Click me</button>
+          <button class="button-text button-disabled-text">Click me</button>
+          <button class="button pay-button">Перейти к оплате</button>
           <h3>Paginaion</h3>
           <button class="button">1</button><span>2 </span><span>3 </span><span>...</span><span>15</span>
           <button class="button"> </button>
