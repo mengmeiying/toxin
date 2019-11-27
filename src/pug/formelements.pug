@@ -4,196 +4,279 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        //- link(rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
-        //- link(rel="stylesheet" href="/resources/demos/style.css")
-        //- script(src="https://code.jquery.com/jquery-1.12.4.js")
-        //- script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+        link(rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
+        script(src="https://code.jquery.com/jquery-1.12.4.js")
+        script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
         title Form Elements
     body
         .formelements__logo-container
             include top-logo.pug
         .formelements__container-big
             .formelements__container
-                .formelements-textfield__container
-                    h3 Text field
-                    input(type="text" value="Email").formelements-textfield__input
-                    h3 Text Field
-                    input(type="text" value="This is pretty awesome").formelements-textfield__input
-                    h3 Dropdown
-                    select.formelements-textfield__input
-                        option Сколько гостей
-                    h3 Masked text field
-                    input(type="date").formelements-textfield__input
-                    h3 Date dropdown
-                    input(type="date").formelements-textfield__input
-                    h3 Date dropdown
-                    input(type="date").formelements-textfield__input
-                    h3 Input date dropdown
-                    input(type="date").formelements-textfield__input
-                    h3 Subscription text field
-                    input(type="email" value="Email").formelements-textfield__input
-                .formelements-checkbox__container
-                    h3 Checkbox buttons
-                    label 
-                        input(type="checkbox") 
-                        span.formelements-checkbox__check Можно курить
-                        br
-                    label
-                        input(type="checkbox" checked) 
-                        span.formelements-checkbox__check Можно с питомцами
-                        br
-                    label
-                        input(type="checkbox" checked) 
-                        span.formelements-checkbox__check Можно пригласить гостей (до 10 человек)
-
-                    h3 Radio buttons
-                    label
-                        input(type="radio" name="gender")
-                        span Мужчина
-                    label
-                        input(type="radio" name="gender" checked)
-                        span Женщина
-                    h3 Toggle
-                    label
-                        label(class="switch")
-                            input(type="checkbox")
-                            span(class="slider round")
-                        span Получать спецпредложения
-                        br
-                    label
-                        label(class="switch")
-                            input(type="checkbox")
-                            span(class="slider round")
-                        span Получать спецпредложения
-                    h3 Like Button
-                    button.like-button 2
-                    button.like-button 12
-
-                    h3 Rate button 
-                    span.star-full
-                    span.star-full
-                    span.star-full
-                    span.star-full
-                    span.star-empty 
-
-                    span.star-full
-                    span.star-full
-                    span.star-full
-                    span.star-full
-                    span.star-full
-                .formelements-buttons__container
-                    h3 Range button
-                    <div id="slider-range"></div>
-
-                    h3 Buttons
-                    button.button Click me
-                    button.button.disabled-button Click me
-                    button.button.button-white Click me
-                    button.button.button-white.disabled-button Click me
-                    button.button-text Click me
-                    button.button-text.button-disabled-text Click me
-                    button.button.pay-button Перейти к оплате
-
-                    h3 Paginaion
-                    button.button 1
-                    span 2 
-                    span 3 
-                    span ...
-                    span 15
-                    button.button 
-
-                    p 1 - 12 из 100+ вариантов аренды
-                .formelements-dropdown__container
-                    h3 Dropdown
-                    select.select-rooms
-                        option 2 спальни, 2 кровати... 
-                    h3 Dropdown
-                    select
-                        option 2 спальни, 2 кровати... 
-                .formelements-dropdown__container2
-                    h3 Dropdown
-                        select.select-guests
+                .formelements__row
+                    .formelements-textfield__container
+                        h3.formelements-textfield__text Text field
+                        input(type="text" value="Email").formelements-textfield__input
+                        h3.formelements-textfield__text2 Text Field
+                        input(type="text" value="This is pretty awesome").formelements-textfield__input
+                        h3.formelements-textfield__text3 Dropdown
+                        select.formelements-textfield__input
                             option Сколько гостей
-                            option 1 гость
-                            option 2 гостя
-                            option 3 гостя
-                .formelements-dropdown__container3
-                    h3 Dropdown
-                        select.select-guests
-                            option 3 гостя
-                .formelements-checkbox__container
-                    h3 Expandable checkbox list
-                    h3 Expandable checkbox list
-                    label   
-                        input(type="checkbox")
-                        span Завтрак 
-                        br
-                    label
-                        input(type="checkbox" checked)
-                        span Письменный стол
-                        br
-                    label
-                        input(type="checkbox" checked)
-                        span Стул для кормления
-                        br
-                    label
-                        input(type="checkbox" checked)
-                        span Кроватка
-                        br
-                    label
-                        input(type="checkbox")
-                        span Телевизор
-                        br
-                    label
-                        input(type="checkbox")
-                        span Шампунь
-                        br
-                    label
-                        input(type="checkbox")
-                        span Телевизор
-                        br
-                    label
-                        input(type="checkbox")
-                        span Шампунь
-                        
-                .formelements-rich__container
-                    h3 Rich checkbox buttons
-                    label
-                        input(type="checkbox")
-                        h4 Широкий коридор 
-                        p Ширина коридоров в номере не менее 91 см.
-                    label
-                        input(type="checkbox")
-                        h4 Помощник для инвалидов
-                        p На 1 этаже вас встретит специалист  и проводит до номера.
-                .formelements-bullet__container
-                    label
-                        input(type="radio")
-                        span Нельзя с питомцами
-                        br
-                    label
-                        input(type="radio")
-                        span Без вечеринок и мероприятий
-                        br
-                    label
-                        input(type="radio")
-                        span Время прибытия - после 13:00, а выезд до 12:00
-                .formelements-comfort__container
-                    .formelements-comfort__smile
-                        h4 Комфорт
-                        p Шумопоглощающие стены
-                    hr
-                    .formelements-comfort__building
-                        h4 Удобство
-                        p Окно в каждой из спален
-                    hr
-                .formelements-feedback__container
-                    .formelements-feedback__avatar
-                        h4 Мурад Сарафанов 
-                        p 5 дней назад 
-                    p.
-                        Великолепный матрас на кровати в основной 
-                        спальне! А пуфик вообще потрясающий. 
-                        И стены, действительно, шумоподавляющие. 
-                        Выкрикивал комплименты повару — никто 
-                        не жаловался из соседей.
+                        h3.formelements-textfield__text4 Masked text field
+                        input(type="date").formelements-textfield__input
+                        h3 Date dropdown
+                        input(type="date").formelements-textfield__input.input-date
+                        h3 Date dropdown
+                        input(type="date").formelements-textfield__input.input-date
+                        h3 Input date dropdown
+                        input(type="date").formelements-textfield__input
+                        h3 Subscription text field
+                        input(type="email" value="Email").formelements-textfield__input
+                    .formelements-checkbox__container
+                        h3 Checkbox buttons
+                        .formelements-checkbox__checkbox
+                            label.checkbox-container 
+                                input(type="checkbox")
+                                span.checkmark
+                                span.formelements-checkbox__check Можно курить
+                                br
+                            label.checkbox-container
+                                input(type="checkbox" checked) 
+                                span.checkmark
+                                span.formelements-checkbox__check Можно с питомцами
+                                br
+                            label.checkbox-container
+                                input(type="checkbox" checked)
+                                span.checkmark
+                                span.formelements-checkbox__check Можно пригласить гостей (до 10 человек)
+
+                        h3 Radio buttons
+                        .formelements-checkbox__radio
+                            label
+                                input(type="radio" name="gender")
+                                span Мужчина
+                            label
+                                input(type="radio" name="gender" checked)
+                                span Женщина
+                        h3 Toggle
+                        .formelements-checkbox__toggle
+                            label
+                                label(class="switch")
+                                    input(type="checkbox" checked)
+                                    span(class="slider round")
+                                span Получать спецпредложения
+                                br
+                            label
+                                label(class="switch")
+                                    input(type="checkbox")
+                                    span(class="slider round")
+                                span Получать спецпредложения
+                        h3 Like Button
+                        .formelements-checkbox__like
+                            button.like-button 2
+                            button.like-button 12
+
+                        h3 Rate button 
+                        span.star-full
+                        span.star-full
+                        span.star-full
+                        span.star-full
+                        span.star-empty 
+
+                        span.star-full
+                        span.star-full
+                        span.star-full
+                        span.star-full
+                        span.star-full
+                    .formelements-buttons__container
+                        h3.formelements-buttons__range Range button
+                        <div id="slider-range"></div>
+
+                        h3 Buttons
+                        button.button Click me
+                        button.button.disabled-button Click me
+                        button.button.button-white Click me
+                        button.button.button-white.disabled-button Click me
+                        button.button-text Click me
+                        button.button-text.button-disabled-text Click me
+                        button.button.pay-button Перейти к оплате
+
+                        h3 Pagination
+                        .formelements-buttons__pagination
+                            button.button 1
+                            span 2 
+                            span 3 
+                            span ...
+                            span 15
+                            .green-arrow-button
+
+                        p 1 - 12 из 100+ вариантов аренды
+                .formelements__row.formelements-dropdown__row
+                    .formelements-dropdown__container
+                        h3 Dropdown
+                        <div class="iqdropdown">
+                            <p class="iqdropdown-selection"></p>
+                            <div class="iqdropdown-menu">
+                            <div class="iqdropdown-menu-option" data-id="item1">
+                                <div>
+                                <p class="iqdropdown-item">Спальни</p>
+                                </div>
+                            </div>
+                            <div class="iqdropdown-menu-option" data-id="item2">
+                                <div>
+                                <p class="iqdropdown-item">Кровати</p>
+                                </div>
+                            </div>
+                            <div class="iqdropdown-menu-option" data-id="item3">
+                                <div>
+                                <p class="iqdropdown-item">Ванные комнаты</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        h3 Dropdown
+                        <div class="iqdropdown menu-open">
+                            <p class="iqdropdown-selection"></p>
+                            <div class="iqdropdown-menu">
+                            <div class="iqdropdown-menu-option" data-id="item1">
+                                <div>
+                                <p class="iqdropdown-item">Спальни</p>
+                                </div>
+                            </div>
+                            <div class="iqdropdown-menu-option" data-id="item2">
+                                <div>
+                                <p class="iqdropdown-item">Кровати</p>
+                                </div>
+                            </div>
+                            <div class="iqdropdown-menu-option" data-id="item3">
+                                <div>
+                                <p class="iqdropdown-item">Ванные комнаты</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    .formelements-dropdown__container2
+                        h3 Dropdown
+                        <div class="iqdropdown menu-open">
+                            <p class="iqdropdown-selection"></p>
+                            <div class="iqdropdown-menu">
+                            <div class="iqdropdown-menu-option" data-id="item1">
+                                <div>
+                                <p class="iqdropdown-item">Взрослые</p>
+                                </div>
+                            </div>
+                            <div class="iqdropdown-menu-option" data-id="item2">
+                                <div>
+                                <p class="iqdropdown-item">Дети</p>
+                                </div>
+                            </div>
+                            <div class="iqdropdown-menu-option" data-id="item3">
+                                <div>
+                                <p class="iqdropdown-item">Младенцы</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    .formelements-dropdown__container3
+                        h3 Dropdown
+                        <div class="iqdropdown menu-open">
+                            <p class="iqdropdown-selection"></p>
+                            <div class="iqdropdown-menu">
+                            <div class="iqdropdown-menu-option" data-id="item1">
+                                <div>
+                                <p class="iqdropdown-item">Взрослые</p>
+                                </div>
+                            </div>
+                            <div class="iqdropdown-menu-option" data-id="item2">
+                                <div>
+                                <p class="iqdropdown-item">Дети</p>
+                                </div>
+                            </div>
+                            <div class="iqdropdown-menu-option" data-id="item3">
+                                <div>
+                                <p class="iqdropdown-item">Младенцы</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                .formelements__row
+                    .formelements-checkbox__container
+                        h3 Expandable checkbox list
+                        h3 Expandable checkbox list
+                        label.checkbox-container   
+                            input(type="checkbox")
+                            span.checkmark
+                            span Завтрак 
+                            br
+                        label.checkbox-container
+                            input(type="checkbox" checked)
+                            span.checkmark
+                            span Письменный стол
+                            br
+                        label.checkbox-container
+                            input(type="checkbox" checked)
+                            span.checkmark
+                            span Стул для кормления
+                            br
+                        label.checkbox-container
+                            input(type="checkbox" checked)
+                            span.checkmark
+                            span Кроватка
+                            br
+                        label.checkbox-container
+                            input(type="checkbox")
+                            span.checkmark
+                            span Телевизор
+                            br
+                        label.checkbox-container
+                            input(type="checkbox")
+                            span.checkmark
+                            span Шампунь
+                            br
+                        label.checkbox-container
+                            input(type="checkbox")
+                            span.checkmark
+                            span Телевизор
+                            br
+                        label.checkbox-container
+                            input(type="checkbox")
+                            span.checkmark
+                            span Шампунь
+                            
+                    .formelements-rich__container
+                        h3 Rich checkbox buttons
+                        label.checkbox-container
+                            input(type="checkbox")
+                            span.checkmark
+                            h4 Широкий коридор 
+                            p Ширина коридоров в номере не менее 91 см.
+                        label.checkbox-container
+                            input(type="checkbox")
+                            span.checkmark
+                            h4 Помощник для инвалидов
+                            p На 1 этаже вас встретит специалист  и проводит до номера.
+                    .formelements-bullet__container
+                        ul.list
+                            li Нельзя с питомцами
+                            li Без вечеринок и мероприятий
+                            li Время прибытия - после 13:00, а выезд до 12:00
+                .formelements__row
+                    .formelements-comfort__container
+                        .formelements-comfort__smile
+                            h4 Комфорт
+                            p Шумопоглощающие стены
+                        hr
+                        .formelements-comfort__building
+                            h4 Удобство
+                            p Окно в каждой из спален
+                        hr
+                    .formelements-feedback__container
+                        .formelements-feedback__avatar
+                            h4 Мурад Сарафанов 
+                            p 5 дней назад 
+                        p.
+                            Великолепный матрас на кровати в основной 
+                            спальне! А пуфик вообще потрясающий. 
+                            И стены, действительно, шумоподавляющие. 
+                            Выкрикивал комплименты повару — никто 
+                            не жаловался из соседей.
