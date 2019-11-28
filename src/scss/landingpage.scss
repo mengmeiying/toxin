@@ -2,6 +2,10 @@
     position: relative;
 }
 
+.landing-page__image-container img{
+    display: inline-block;
+}
+
 .landing-page__container{
     position: absolute;
     left: 140px;

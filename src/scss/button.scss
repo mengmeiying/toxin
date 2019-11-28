@@ -12,6 +12,9 @@
     margin: 15px 10px;
 }
 
+
+
+
 .button:active{
     opacity: 0.5;
 }
@@ -30,16 +33,16 @@
     box-shadow: 2px 1000px 1px #fff inset;
 }
 
+.main-login-list__login{
+    padding: 10px 20px;
+    
+}
+
 .like-button:active{
     opacity: 0.5;
 }
 
-.main-login-list__login{
-    padding: 10px 20px;
-    border: 1px solid #BC9CFF;
-    background-color: #fff;
-    color: #BC9CFF;
-}
+
 
 .main-login-list__register{
     padding: 10px 20px;
