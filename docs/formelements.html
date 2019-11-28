@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Form Elements</title>
   <link href="././css/app.css" rel="stylesheet"></head>
   <body>
@@ -26,10 +27,26 @@
             <input class="formelements-textfield__input" type="text" value="Email">
             <h3 class="formelements-textfield__text2">Text Field</h3>
             <input class="formelements-textfield__input" type="text" value="This is pretty awesome">
-            <h3 class="formelements-textfield__text3">Dropdown</h3>
-            <select class="formelements-textfield__input">
-              <option>Сколько гостей</option>
-            </select>
+            <h3 class="formelements-textfield__text3">Dropdown</h3><div class="iqdropdown">
+<p class="iqdropdown-selection"></p>
+<div class="iqdropdown-menu">
+<div class="iqdropdown-menu-option" data-id="item1">
+<div>
+<p class="iqdropdown-item">Взрослые</p>
+</div>
+</div>
+<div class="iqdropdown-menu-option" data-id="item2">
+<div>
+<p class="iqdropdown-item">Дети</p>
+</div>
+</div>
+<div class="iqdropdown-menu-option" data-id="item3">
+<div>
+<p class="iqdropdown-item">Младенцы</p>
+</div>
+</div>
+</div>
+</div>
             <h3 class="formelements-textfield__text4">Masked text field</h3>
             <input class="formelements-textfield__input" type="date">
             <h3>Date dropdown</h3>
@@ -56,11 +73,11 @@
             </div>
             <h3>Radio buttons</h3>
             <div class="formelements-checkbox__radio">
-              <label>
-                <input type="radio" name="gender"><span>Мужчина</span>
+              <label class="radio__container">
+                <input type="radio" name="gender"><span class="radio-checkmark"></span><span>Мужчина</span>
               </label>
-              <label>
-                <input type="radio" name="gender" checked><span>Женщина</span>
+              <label class="radio__container">
+                <input type="radio" name="gender" checked><span class="radio-checkmark"></span><span>Женщина</span>
               </label>
             </div>
             <h3>Toggle</h3>
@@ -76,12 +93,53 @@
                 </label><span>Получать спецпредложения</span>
               </label>
             </div>
-            <h3>Like Button</h3>
+            <h3 class="formelements__like-header">Like Button</h3>
             <div class="formelements-checkbox__like">
-              <button class="like-button">2</button>
-              <button class="like-button">12</button>
+              <label class="like__container">
+                <input type="checkbox"><span class="like-checkmark"></span><span class="like-heart"></span><span class="like-number"></span>
+              </label>
+              <label class="like__container">
+                <input type="checkbox" checked><span class="like-checkmark"></span><span class="like-heart"></span><span class="like-number"></span>
+              </label>
             </div>
-            <h3>Rate button </h3><span class="star-full"></span><span class="star-full"></span><span class="star-full"></span><span class="star-full"></span><span class="star-empty"> </span><span class="star-full"></span><span class="star-full"></span><span class="star-full"></span><span class="star-full"></span><span class="star-full"></span>
+            <h3>Rate button </h3><div class='rating-stars text-center rating-1'>
+<ul id='stars'>
+<li class='star' title='Poor' data-value='1'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Fair' data-value='2'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Good' data-value='3'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Excellent' data-value='4'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='WOW!!!' data-value='5'>
+<i class="material-icons md-18">star</i>
+</li>
+</ul>
+</div>
+<div class='rating-stars text-center'>
+<ul id='stars'>
+<li class='star' title='Poor' data-value='1'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Fair' data-value='2'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Good' data-value='3'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Excellent' data-value='4'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='WOW!!!' data-value='5'>
+<i class="material-icons md-18">star</i>
+</li>
+</ul>
+</div>
           </div>
           <div class="formelements-buttons__container">
             <h3 class="formelements-buttons__range">Range button</h3><div id="slider-range"></div>
@@ -103,7 +161,7 @@
         </div>
         <div class="formelements__row formelements-dropdown__row">
           <div class="formelements-dropdown__container">
-            <h3>Dropdown</h3><div class="iqdropdown">
+            <h3 class="formelements-dropdown__header-1">Dropdown</h3><div class="iqdropdown">
 <p class="iqdropdown-selection"></p>
 <div class="iqdropdown-menu">
 <div class="iqdropdown-menu-option" data-id="item1">
@@ -123,7 +181,7 @@
 </div>
 </div>
 </div>
-            <h3>Dropdown</h3><div class="iqdropdown menu-open">
+            <h3 class="formelements-dropdown__header-2">Dropdown</h3><div class="iqdropdown menu-open">
 <p class="iqdropdown-selection"></p>
 <div class="iqdropdown-menu">
 <div class="iqdropdown-menu-option" data-id="item1">
@@ -219,7 +277,7 @@
             </label>
           </div>
           <div class="formelements-rich__container">
-            <h3>Rich checkbox buttons</h3>
+            <h3 class="formelements-rich__header">Rich checkbox buttons</h3>
             <label class="checkbox-container">
               <input type="checkbox"><span class="checkmark"></span>
               <h4>Широкий коридор </h4>

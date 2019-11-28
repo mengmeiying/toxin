@@ -30,21 +30,6 @@
     box-shadow: 2px 1000px 1px #fff inset;
 }
 
-.like-button{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 12px;
-    text-align: center;
-    color: #BC9CFF;
-
-    background-color: #fff;
-    border: 3px solid;
-    border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) 10;
-    border-radius: 22px;
-}
-
 .like-button:active{
     opacity: 0.5;
 }

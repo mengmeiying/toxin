@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/mengmeiying/toxin#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.5",
     "cross-env": "^5.2.1",

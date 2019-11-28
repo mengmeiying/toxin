@@ -7,6 +7,7 @@ html(lang="en")
         link(rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
         script(src="https://code.jquery.com/jquery-1.12.4.js")
         script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
         title Form Elements
     body
         .formelements__logo-container
@@ -20,8 +21,26 @@ html(lang="en")
                         h3.formelements-textfield__text2 Text Field
                         input(type="text" value="This is pretty awesome").formelements-textfield__input
                         h3.formelements-textfield__text3 Dropdown
-                        select.formelements-textfield__input
-                            option Сколько гостей
+                        <div class="iqdropdown">
+                            <p class="iqdropdown-selection"></p>
+                            <div class="iqdropdown-menu">
+                            <div class="iqdropdown-menu-option" data-id="item1">
+                                <div>
+                                <p class="iqdropdown-item">Взрослые</p>
+                                </div>
+                            </div>
+                            <div class="iqdropdown-menu-option" data-id="item2">
+                                <div>
+                                <p class="iqdropdown-item">Дети</p>
+                                </div>
+                            </div>
+                            <div class="iqdropdown-menu-option" data-id="item3">
+                                <div>
+                                <p class="iqdropdown-item">Младенцы</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                         h3.formelements-textfield__text4 Masked text field
                         input(type="date").formelements-textfield__input
                         h3 Date dropdown
@@ -52,11 +71,13 @@ html(lang="en")
 
                         h3 Radio buttons
                         .formelements-checkbox__radio
-                            label
+                            label.radio__container
                                 input(type="radio" name="gender")
+                                span.radio-checkmark
                                 span Мужчина
-                            label
+                            label.radio__container
                                 input(type="radio" name="gender" checked)
+                                span.radio-checkmark
                                 span Женщина
                         h3 Toggle
                         .formelements-checkbox__toggle
@@ -71,23 +92,58 @@ html(lang="en")
                                     input(type="checkbox")
                                     span(class="slider round")
                                 span Получать спецпредложения
-                        h3 Like Button
+                        h3.formelements__like-header Like Button
                         .formelements-checkbox__like
-                            button.like-button 2
-                            button.like-button 12
+                            label.like__container
+                                input(type="checkbox")
+                                span.like-checkmark
+                                span.like-heart
+                                span.like-number
+                            label.like__container
+                                input(type="checkbox" checked)
+                                span.like-checkmark
+                                span.like-heart
+                                span.like-number
 
                         h3 Rate button 
-                        span.star-full
-                        span.star-full
-                        span.star-full
-                        span.star-full
-                        span.star-empty 
-
-                        span.star-full
-                        span.star-full
-                        span.star-full
-                        span.star-full
-                        span.star-full
+                        <div class='rating-stars text-center rating-1'>
+                            <ul id='stars'>
+                            <li class='star' title='Poor' data-value='1'>
+                                <i class="material-icons md-18">star</i>
+                            </li>
+                            <li class='star' title='Fair' data-value='2'>
+                                <i class="material-icons md-18">star</i>
+                            </li>
+                            <li class='star' title='Good' data-value='3'>
+                                <i class="material-icons md-18">star</i>
+                            </li>
+                            <li class='star' title='Excellent' data-value='4'>
+                                <i class="material-icons md-18">star</i>
+                            </li>
+                            <li class='star' title='WOW!!!' data-value='5'>
+                                <i class="material-icons md-18">star</i>
+                            </li>
+                            </ul>
+                        </div>
+                        <div class='rating-stars text-center'>
+                            <ul id='stars'>
+                            <li class='star' title='Poor' data-value='1'>
+                                <i class="material-icons md-18">star</i>
+                            </li>
+                            <li class='star' title='Fair' data-value='2'>
+                                <i class="material-icons md-18">star</i>
+                            </li>
+                            <li class='star' title='Good' data-value='3'>
+                                <i class="material-icons md-18">star</i>
+                            </li>
+                            <li class='star' title='Excellent' data-value='4'>
+                                <i class="material-icons md-18">star</i>
+                            </li>
+                            <li class='star' title='WOW!!!' data-value='5'>
+                                <i class="material-icons md-18">star</i>
+                            </li>
+                            </ul>
+                        </div>
                     .formelements-buttons__container
                         h3.formelements-buttons__range Range button
                         <div id="slider-range"></div>
@@ -113,7 +169,7 @@ html(lang="en")
                         p 1 - 12 из 100+ вариантов аренды
                 .formelements__row.formelements-dropdown__row
                     .formelements-dropdown__container
-                        h3 Dropdown
+                        h3.formelements-dropdown__header-1 Dropdown
                         <div class="iqdropdown">
                             <p class="iqdropdown-selection"></p>
                             <div class="iqdropdown-menu">
@@ -134,7 +190,7 @@ html(lang="en")
                             </div>
                             </div>
                         </div>
-                        h3 Dropdown
+                        h3.formelements-dropdown__header-2 Dropdown
                         <div class="iqdropdown menu-open">
                             <p class="iqdropdown-selection"></p>
                             <div class="iqdropdown-menu">
@@ -244,7 +300,7 @@ html(lang="en")
                             span Шампунь
                             
                     .formelements-rich__container
-                        h3 Rich checkbox buttons
+                        h3.formelements-rich__header Rich checkbox buttons
                         label.checkbox-container
                             input(type="checkbox")
                             span.checkmark

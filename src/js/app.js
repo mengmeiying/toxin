@@ -3,7 +3,9 @@ var app = (function () {
     //var importedModuleB = require('./register.js');
     var importedModuleA = require("./jquery-ui.js");
     var importedModuleC = require('./slider.js');
-    var iModuleD = require('./item-quantity-dropdown.min.js')
+    var importedModuleE = require('./star.js');
+    var iModuleD = require('./item-quantity-dropdown.min.js');
+    var importedModuleF = require('./jquery.min.js');
 
 
     $(document).ready(() => {
@@ -15,6 +17,8 @@ var app = (function () {
       moduleC : importedModuleC,
       //moduleB : importedModuleB,
       moduleD : iModuleD,
+      moduleE : importedModuleE,
+      moduleF : importedModuleF,
     }
     
     
