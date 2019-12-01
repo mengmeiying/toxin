@@ -44,6 +44,59 @@
     height: 257px;
     background-color: #fff;
     border-radius: 4px;
+    p{
+        margin: 0;
+    }
+    ul#stars{
+        margin: 0;
+    }
+
+    .smallcard__number{
+        font-family: "Quicksand";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: #1F2041;
+    }
+
+    .smallcard__price{
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+
+        .smallcard__bold{
+            font-weight: bold;
+        }
+    }
+    .smallcard__purple{
+        text-transform: uppercase;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        color: #BC9CFF;
+    }
+}
+
+.smallcard__top, .smallcard__bottom{
+    display: flex;
+    justify-content: space-around;
+}
+
+.smallcard__top{
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.smallcard__bottom{
+    span{
+        margin-top: 11px;
+    }
 }
 
 .card{

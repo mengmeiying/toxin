@@ -1,14 +1,39 @@
 .room__container-photo{
     display: flex;
-    width: 1440px;
+    max-width: 1440px;
+    background-color: #fff;
+}
+
+@media (max-width: 1000px){
+    .room__container-photo{
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .room__container-photo-small{
+        display: none;
+    }
+    .room__container-photo img{
+        margin: 0 auto;
+        width: 100%;
+        min-width: 320px;
+        display: inline-block;
+        background-color: #fff;
+    }
 }
 
 .room__container{
     background-color: #fff;
     padding: 70px 140px;
-    width: 1160px;
+    max-width: 1160px;
     display: flex;
 }
+
+@media (max-width: 1000px){
+    .room__container{
+        flex-wrap: wrap;
+    }
+}
+
 
 .room__container-left{
     display: flex;
@@ -23,7 +48,7 @@
 
 .room-feedback__container{
     margin-bottom: 30px;
-    width: 710px; 
+    max-width: 710px; 
     margin-right: 70px;
 }
 

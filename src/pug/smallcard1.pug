@@ -1,5 +1,27 @@
 .smallcard__container.card-no-shadow
     img(src="img/image1.png")
-    p 888
-    p 9 990р в сутки
-    p 145 Отзывов
+    .smallcard__top
+        <p class="smallcard__number">№ 888 <span class="smallcard__purple">Люкс</span></p>
+        <p class="smallcard__price"> <span class="smallcard__bold">9 990₽</span> в сутки</p>
+    hr
+    .smallcard__bottom
+        <div class='rating-stars text-center'>
+            <ul id='stars'>
+            <li class='star' title='Poor' data-value='1'>
+                <i class="material-icons md-18">star</i>
+            </li>
+            <li class='star' title='Fair' data-value='2'>
+                <i class="material-icons md-18">star</i>
+            </li>
+            <li class='star' title='Good' data-value='3'>
+                <i class="material-icons md-18">star</i>
+            </li>
+            <li class='star' title='Excellent' data-value='4'>
+                <i class="material-icons md-18">star</i>
+            </li>
+            <li class='star' title='WOW!!!' data-value='5'>
+                <i class="material-icons md-18">star</i>
+            </li>
+            </ul>
+        </div>
+        <p class="smallcard__price"> <span class="smallcard__bold">145</span> Отзывов</p>
