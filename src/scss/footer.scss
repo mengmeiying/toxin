@@ -6,13 +6,22 @@
     background-color: #fff;
     padding: 104px 140px 0px;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     font-size: 14px;
     line-height: 24px;
     justify-content: space-between;
-    width: 1160px;
+    max-width: 1160px;
+    min-width: 1160px;
     margin-bottom: 100px;
 }
+
+@media (max-width: 1200px){
+    .main-footer__container{
+        min-width: 320px;
+    }
+}
+
 .main-footer__text{
     margin:0;
     padding: 0;
@@ -79,7 +88,14 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    width: 1160px;
+    max-width: 1160px;
+    min-width: 1160px;
+}
+
+@media (max-width: 1200px){
+    .main-footer__copyright-container{
+        min-width: 320px;
+    }
 }
 
 .main-footer__socials-link{
