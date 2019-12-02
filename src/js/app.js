@@ -1,6 +1,6 @@
 var app = (function () {
   
-    //var importedModuleB = require('./register.js');
+    var importedModuleB = require('./register.js');
     var importedModuleA = require("./jquery-ui.js");
     var importedModuleC = require('./slider.js');
     var importedModuleE = require('./star.js');
@@ -15,7 +15,7 @@ var app = (function () {
     return {
       moduleA : importedModuleA,
       moduleC : importedModuleC,
-      //moduleB : importedModuleB,
+      moduleB : importedModuleB,
       moduleD : iModuleD,
       moduleE : importedModuleE,
       moduleF : importedModuleF,

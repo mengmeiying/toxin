@@ -14,11 +14,28 @@ html(lang="en")
         .searchroom__container
             .searchroom__container-options
                 h3.searchroom__dates Даты пребывания в отеле
-                input(type="date")
+                <input type='text' class="datepicker-here"/>
                 h3.searchroom__guests Гости
-                
-                select
-                    options 3 гостя, 1 младенец
+                <div class="iqdropdown">
+                    <p class="iqdropdown-selection"></p>
+                    <div class="iqdropdown-menu">
+                        <div class="iqdropdown-menu-option" data-id="item1">
+                            <div>
+                            <p class="iqdropdown-item">Взрослые</p>
+                            </div>
+                        </div>
+                        <div class="iqdropdown-menu-option" data-id="item2">
+                            <div>
+                            <p class="iqdropdown-item">Дети</p>
+                            </div>
+                        </div>
+                        <div class="iqdropdown-menu-option" data-id="item3">
+                            <div>
+                            <p class="iqdropdown-item">Младенцы</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 h3.searchroom__prices Диапазон цены
                 <div id="slider-range"></div>
                 p Стоимость за сутки пребывания в номере
@@ -49,9 +66,66 @@ html(lang="en")
                     h4 Помощник для инвалидов
                     p На 1 этаже вас встретит специалист  и проводит до номера.
                 h3.searchroom__comfort Удобства номера
-                select
-                    options 2 спальни, 2 кровати
-                h3 Дополнительные удобства 
+                <div class="iqdropdown">
+                    <p class="iqdropdown-selection"></p>
+                    <div class="iqdropdown-menu">
+                        <div class="iqdropdown-menu-option" data-id="item1">
+                            <div>
+                            <p class="iqdropdown-item">Спальни</p>
+                            </div>
+                        </div>
+                        <div class="iqdropdown-menu-option" data-id="item2">
+                            <div>
+                            <p class="iqdropdown-item">Кровати</p>
+                            </div>
+                        </div>
+                        <div class="iqdropdown-menu-option" data-id="item3">
+                            <div>
+                            <p class="iqdropdown-item">Ванные комнаты</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                h3.searchroom__plus Дополнительные удобства 
+                label.checkbox-container   
+                    input(type="checkbox")
+                    span.checkmark
+                    span Завтрак 
+                    br
+                label.checkbox-container
+                    input(type="checkbox" checked)
+                    span.checkmark
+                    span Письменный стол
+                    br
+                label.checkbox-container
+                    input(type="checkbox" checked)
+                    span.checkmark
+                    span Стул для кормления
+                    br
+                label.checkbox-container
+                    input(type="checkbox" checked)
+                    span.checkmark
+                    span Кроватка
+                    br
+                label.checkbox-container
+                    input(type="checkbox")
+                    span.checkmark
+                    span Телевизор
+                    br
+                label.checkbox-container
+                    input(type="checkbox")
+                    span.checkmark
+                    span Шампунь
+                    br
+                label.checkbox-container
+                    input(type="checkbox")
+                    span.checkmark
+                    span Телевизор
+                    br
+                label.checkbox-container
+                    input(type="checkbox")
+                    span.checkmark
+                    span Шампунь
             .search-room__cards
                 .smallcard__container
                     img(src="img/image1.png")
@@ -80,7 +154,6 @@ html(lang="en")
                             </ul>
                         </div>
                         <p class="smallcard__price"> <span class="smallcard__bold">145</span> Отзывов</p>    
-                
                 .smallcard__container
                     img(src="img/image2.png")
                     .smallcard__top
@@ -378,4 +451,11 @@ html(lang="en")
                             </ul>
                         </div>
                         <p class="smallcard__price"> <span class="smallcard__bold">55</span> Отзывов</p>
+                .searchroom__nav
+                    button.button 1
+                    span 2 
+                    span 3 
+                    span ...
+                    span 15
+                    .green-arrow-button
         include footer.pug

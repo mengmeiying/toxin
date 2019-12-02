@@ -1,7 +1,7 @@
 .search-room__cards{
     display: flex;
     flex-wrap: wrap;
-    max-width: 830px;
+    max-width: 860px;
 }
 
 .searchroom__container{
@@ -10,11 +10,25 @@
     background-color: #fff;
     padding: 30px 140px 70px;
     max-width: 1160px;
+    min-width: 1160px;
+
+    hr{
+        background: rgba(31, 32, 65, 0.1);
+        width: 230px;
+        margin: 0 auto;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 1000px){
+    .searchroom__container{
+        min-width: 300px;
+    }
 }
 
 .searchroom__container-options{
     width: 266px;
-    margin-right: 60px;
+    margin-right: 30px;
 }
 
 .smallcard__container{
@@ -74,4 +88,40 @@
 
 .searchroom__comfort{
     margin-bottom: 5px;
+}
+
+.searchroom__plus{
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.searchroom__plus::after{
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    top: 3px;
+    right: 25px;
+    border: 2px solid rgba(31, 32, 65, 0.5);
+    border-width: 2px 0px 0px 2px;
+    transform: rotate(45deg);
+}
+
+.searchroom__container-options .iqdropdown{
+    width: 266px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.searchroom__container-options .datepicker-here{
+    width: 266px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.searchroom__nav{
+    margin: 0 auto;
+    span{
+        margin: 15px;
+    }
 }

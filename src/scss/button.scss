@@ -74,4 +74,7 @@
 .button-long{
     width: 100%;
     margin-left: 0;
+    background: url("../img/arrow_forward_white.svg"), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-repeat: no-repeat;
+    background-position: 280px 12px, 0 0;
 }
