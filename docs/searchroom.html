@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Search Room</title>
   <link href="././css/app.css" rel="stylesheet"></head>
   <body>
@@ -31,32 +35,36 @@
 </header>
     <div class="searchroom__container">
       <div class="searchroom__container-options">
-        <h3>Даты пребывания в отеле</h3>
+        <h3 class="searchroom__dates">Даты пребывания в отеле</h3>
         <input type="date">
-        <h3>Гости</h3>
+        <h3 class="searchroom__guests">Гости</h3>
         <select>
           <options>3 гостя, 1 младенец</options>
         </select>
-        <h3>Диапазон цены</h3>
-        <input type="range">
-        <h3>Checkbox buttons</h3>
-        <label>
-          <input type="checkbox"><span>Можно курить</span>
-        </label><br>
-        <label>
-          <input type="checkbox"><span>Можно с питомцами</span>
-        </label><br>
-        <label>
-          <input type="checkbox"><span>Можно пригласить гостей (до 10 человек)</span>
+        <h3 class="searchroom__prices">Диапазон цены</h3><div id="slider-range"></div>
+        <p>Стоимость за сутки пребывания в номере</p>
+        <h3 class="searchroom__checkbox">Checkbox buttons</h3>
+        <label class="checkbox-container"> 
+          <input type="checkbox"><span class="checkmark"></span><span class="formelements-checkbox__check">Можно курить</span><br>
         </label>
-        <h3>Доступность</h3>
-        <label>
-          <input type="checkbox"><span>Широкий коридор</span>
-        </label><br>
-        <label>
-          <input type="checkbox"><span>Помощник для инвалидов</span>
+        <label class="checkbox-container">
+          <input type="checkbox" checked><span class="checkmark"></span><span class="formelements-checkbox__check">Можно с питомцами</span><br>
         </label>
-        <h3>Удобства номера</h3>
+        <label class="checkbox-container">
+          <input type="checkbox" checked><span class="checkmark"></span><span class="formelements-checkbox__check">Можно пригласить гостей (до 10 человек)</span>
+        </label>
+        <h3 class="searchroom__availability">Доступность</h3>
+        <label class="checkbox-container">
+          <input type="checkbox"><span class="checkmark"></span>
+          <h4>Широкий коридор </h4>
+          <p>Ширина коридоров в номере не менее 91 см.</p>
+        </label>
+        <label class="checkbox-container">
+          <input type="checkbox"><span class="checkmark"></span>
+          <h4>Помощник для инвалидов</h4>
+          <p>На 1 этаже вас встретит специалист  и проводит до номера.</p>
+        </label>
+        <h3 class="searchroom__comfort">Удобства номера</h3>
         <select>
           <options>2 спальни, 2 кровати</options>
         </select>
@@ -64,64 +72,328 @@
       </div>
       <div class="search-room__cards">
         <div class="smallcard__container"><img src="img/image1.png">
-          <p>888</p>
-          <p>9 990р в сутки</p>
-          <p>145 Отзывов</p>
+          <div class="smallcard__top"><p class="smallcard__number">№ 888 <span class="smallcard__purple">Люкс</span></p>
+<p class="smallcard__price"> <span class="smallcard__bold">9 990₽</span> в сутки</p>
+          </div>
+          <hr>
+          <div class="smallcard__bottom"><div class='rating-stars text-center'>
+<ul id='stars'>
+<li class='star' title='Poor' data-value='1'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Fair' data-value='2'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Good' data-value='3'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Excellent' data-value='4'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='WOW!!!' data-value='5'>
+<i class="material-icons md-18">star</i>
+</li>
+</ul>
+</div>
+<p class="smallcard__price"> <span class="smallcard__bold">145</span> Отзывов</p>    
+          </div>
         </div>
         <div class="smallcard__container"><img src="img/image2.png">
-          <p>840</p>
-          <p>9 900р в сутки</p>
-          <p>65 Отзывов</p>
+          <div class="smallcard__top"><p class="smallcard__number">№ 840 <span class="smallcard__purple">Люкс</span></p>
+<p class="smallcard__price"> <span class="smallcard__bold">9 990₽</span> в сутки</p>
+          </div>
+          <hr>
+          <div class="smallcard__bottom"><div class='rating-stars text-center'>
+<ul id='stars'>
+<li class='star' title='Poor' data-value='1'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Fair' data-value='2'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Good' data-value='3'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Excellent' data-value='4'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='WOW!!!' data-value='5'>
+<i class="material-icons md-18">star</i>
+</li>
+</ul>
+</div>
+<p class="smallcard__price"> <span class="smallcard__bold">65</span> Отзывов</p>
+          </div>
         </div>
         <div class="smallcard__container"><img src="img/image3.png">
-          <p>980</p>
-          <p>8 500р в сутки</p>
-          <p>35 Отзывов</p>
+          <div class="smallcard__top"><p class="smallcard__number">№ 980 <span class="smallcard__purple">Люкс</span></p>
+<p class="smallcard__price"> <span class="smallcard__bold">8 500₽</span> в сутки</p>
+          </div>
+          <hr>
+          <div class="smallcard__bottom"><div class='rating-stars text-center'>
+<ul id='stars'>
+<li class='star' title='Poor' data-value='1'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Fair' data-value='2'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Good' data-value='3'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Excellent' data-value='4'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='WOW!!!' data-value='5'>
+<i class="material-icons md-18">star</i>
+</li>
+</ul>
+</div>
+<p class="smallcard__price"> <span class="smallcard__bold">35</span> Отзывов</p>
+          </div>
         </div>
         <div class="smallcard__container"><img src="img/image4.png">
-          <p>856</p>
-          <p>7 300р в сутки</p>
-          <p>19 Отзывов</p>
+          <div class="smallcard__top"><p class="smallcard__number">№ 856 <span class="smallcard__purple">Люкс</span></p>
+<p class="smallcard__price"> <span class="smallcard__bold">7 300₽</span> в сутки</p>
+          </div>
+          <hr>
+          <div class="smallcard__bottom"><div class='rating-stars text-center'>
+<ul id='stars'>
+<li class='star' title='Poor' data-value='1'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Fair' data-value='2'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Good' data-value='3'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Excellent' data-value='4'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='WOW!!!' data-value='5'>
+<i class="material-icons md-18">star</i>
+</li>
+</ul>
+</div>
+<p class="smallcard__price"> <span class="smallcard__bold">19</span> Отзывов</p>
+          </div>
         </div>
         <div class="smallcard__container"><img src="img/image5.png">
-          <p>740</p>
-          <p>6 000р в сутки</p>
-          <p>44 Отзывов</p>
+          <div class="smallcard__top"><p class="smallcard__number">№ 740 <span class="smallcard__purple">Люкс</span></p>
+<p class="smallcard__price"> <span class="smallcard__bold">6 000₽</span> в сутки</p>
+          </div>
+          <hr>
+          <div class="smallcard__bottom"><div class='rating-stars text-center'>
+<ul id='stars'>
+<li class='star' title='Poor' data-value='1'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Fair' data-value='2'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Good' data-value='3'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Excellent' data-value='4'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='WOW!!!' data-value='5'>
+<i class="material-icons md-18">star</i>
+</li>
+</ul>
+</div>
+<p class="smallcard__price"> <span class="smallcard__bold">44</span> Отзывов</p>
+          </div>
         </div>
         <div class="smallcard__container"><img src="img/image6.png">
-          <p>982</p>
-          <p>5 800р в сутки</p>
-          <p>56 Отзывов</p>
+          <div class="smallcard__top"><p class="smallcard__number">№ 982 <span class="smallcard__purple">Люкс</span></p>
+<p class="smallcard__price"> <span class="smallcard__bold">5 800₽</span> в сутки</p>
+          </div>
+          <hr>
+          <div class="smallcard__bottom"><div class='rating-stars text-center'>
+<ul id='stars'>
+<li class='star' title='Poor' data-value='1'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Fair' data-value='2'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Good' data-value='3'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Excellent' data-value='4'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='WOW!!!' data-value='5'>
+<i class="material-icons md-18">star</i>
+</li>
+</ul>
+</div>
+<p class="smallcard__price"> <span class="smallcard__bold">56</span> Отзывов</p>
+          </div>
         </div>
         <div class="smallcard__container"><img src="img/image7.png">
-          <p>678</p>
-          <p>5 500р в сутки</p>
-          <p>45 Отзывов</p>
+          <div class="smallcard__top"><p class="smallcard__number">№ 678 <span class="smallcard__purple">Люкс</span></p>
+<p class="smallcard__price"> <span class="smallcard__bold">5 500₽</span> в сутки</p>
+          </div>
+          <hr>
+          <div class="smallcard__bottom"><div class='rating-stars text-center'>
+<ul id='stars'>
+<li class='star' title='Poor' data-value='1'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Fair' data-value='2'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Good' data-value='3'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Excellent' data-value='4'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='WOW!!!' data-value='5'>
+<i class="material-icons md-18">star</i>
+</li>
+</ul>
+</div>
+<p class="smallcard__price"> <span class="smallcard__bold">45</span> Отзывов</p>
+          </div>
         </div>
         <div class="smallcard__container"><img src="img/image8.png">
-          <p>450</p>
-          <p>5 300р в сутки</p>
-          <p>39 Отзывов</p>
+          <div class="smallcard__top"><p class="smallcard__number">№ 450 <span class="smallcard__purple">Люкс</span></p>
+<p class="smallcard__price"> <span class="smallcard__bold">5 300₽</span> в сутки</p>
+          </div>
+          <hr>
+          <div class="smallcard__bottom"><div class='rating-stars text-center'>
+<ul id='stars'>
+<li class='star' title='Poor' data-value='1'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Fair' data-value='2'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Good' data-value='3'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Excellent' data-value='4'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='WOW!!!' data-value='5'>
+<i class="material-icons md-18">star</i>
+</li>
+</ul>
+</div>
+<p class="smallcard__price"> <span class="smallcard__bold">39</span> Отзывов</p>
+          </div>
         </div>
         <div class="smallcard__container"><img src="img/image9.png">
-          <p>350</p>
-          <p>5 000р в сутки</p>
-          <p>77 Отзывов</p>
+          <div class="smallcard__top"><p class="smallcard__number">№ 350 <span class="smallcard__purple">Люкс</span></p>
+<p class="smallcard__price"> <span class="smallcard__bold">5 000₽</span> в сутки</p>
+          </div>
+          <hr>
+          <div class="smallcard__bottom"><div class='rating-stars text-center'>
+<ul id='stars'>
+<li class='star' title='Poor' data-value='1'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Fair' data-value='2'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Good' data-value='3'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Excellent' data-value='4'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='WOW!!!' data-value='5'>
+<i class="material-icons md-18">star</i>
+</li>
+</ul>
+</div>
+<p class="smallcard__price"> <span class="smallcard__bold">77</span> Отзывов</p>
+          </div>
         </div>
         <div class="smallcard__container"><img src="img/image10.png">
-          <p>666</p>
-          <p>5 000р в сутки</p>
-          <p>25 Отзывов</p>
+          <div class="smallcard__top"><p class="smallcard__number">№ 666 <span class="smallcard__purple">Люкс</span></p>
+<p class="smallcard__price"> <span class="smallcard__bold">5 000₽</span> в сутки</p>
+          </div>
+          <hr>
+          <div class="smallcard__bottom"><div class='rating-stars text-center'>
+<ul id='stars'>
+<li class='star' title='Poor' data-value='1'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Fair' data-value='2'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Good' data-value='3'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Excellent' data-value='4'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='WOW!!!' data-value='5'>
+<i class="material-icons md-18">star</i>
+</li>
+</ul>
+</div>
+<p class="smallcard__price"> <span class="smallcard__bold">25</span> Отзывов</p>
+          </div>
         </div>
         <div class="smallcard__container"><img src="img/image11.png">
-          <p>444</p>
-          <p>5 000р в сутки</p>
-          <p>15 Отзывов</p>
+          <div class="smallcard__top"><p class="smallcard__number">№ 444 <span class="smallcard__purple">Люкс</span></p>
+<p class="smallcard__price"> <span class="smallcard__bold">5 000₽</span> в сутки</p>
+          </div>
+          <hr>
+          <div class="smallcard__bottom"><div class='rating-stars text-center'>
+<ul id='stars'>
+<li class='star' title='Poor' data-value='1'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Fair' data-value='2'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Good' data-value='3'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Excellent' data-value='4'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='WOW!!!' data-value='5'>
+<i class="material-icons md-18">star</i>
+</li>
+</ul>
+</div>
+<p class="smallcard__price"> <span class="smallcard__bold">15</span> Отзывов</p>
+          </div>
         </div>
         <div class="smallcard__container"><img src="img/image12.png">
-          <p>352</p>
-          <p>5 0000р в сутки</p>
-          <p>55 Отзывов</p>
+          <div class="smallcard__top"><p class="smallcard__number">№ 352 <span class="smallcard__purple">Люкс</span></p>
+<p class="smallcard__price"> <span class="smallcard__bold">5 000₽</span> в сутки</p>
+          </div>
+          <hr>
+          <div class="smallcard__bottom"><div class='rating-stars text-center'>
+<ul id='stars'>
+<li class='star' title='Poor' data-value='1'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Fair' data-value='2'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Good' data-value='3'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='Excellent' data-value='4'>
+<i class="material-icons md-18">star</i>
+</li>
+<li class='star' title='WOW!!!' data-value='5'>
+<i class="material-icons md-18">star</i>
+</li>
+</ul>
+</div>
+<p class="smallcard__price"> <span class="smallcard__bold">55</span> Отзывов</p>
+          </div>
         </div>
       </div>
     </div>

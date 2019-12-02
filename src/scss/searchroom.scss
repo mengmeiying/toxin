@@ -18,12 +18,60 @@
 }
 
 .smallcard__container{
-    margin-right: 5px;
+    margin-right: 12px;
     margin-bottom: 15px;
     width: 270px;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
 }
 
 .smallcard__container:nth-child(3n){
     margin-right: 0;
 
+}   
+
+.searchroom__dates{
+    margin-bottom: 5px;
+}
+
+.searchroom__guests{
+    margin-bottom: 5px;
+}
+
+.searchroom__prices{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.searchroom__prices::after{
+    position: absolute;
+    content: "5 000₽ - 10 000₽";
+    top: 0;
+    right: 0;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.searchroom__container-options p{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(31, 32, 65, 0.5);
+    margin-bottom: 30px;
+}
+
+.searchroom__checkbox{
+    margin-bottom: 16px;
+}
+
+.searchroom__availability{
+    margin-bottom: 16px;
+}
+
+.searchroom__comfort{
+    margin-bottom: 5px;
 }
