@@ -1,10 +1,31 @@
 .findnumber__container.card
     h1 Найдём номера под ваши пожелания
-    label Прибытие
-    input(type="date")
-    label Выезд
-    input(type="date")
-    label Гости
-    select
-        option Сколько гостей
-    button.button Подобрать номер
+    .findnumber__row
+        .findnumber__row--item
+            h3 Прибытие
+            <input type='text' class="datepicker-here"/>
+        .findnumber__row--item
+            h3 Выезд
+            <input type='text' class="datepicker-here"/>
+    h3 Гости
+    <div class="iqdropdown">
+        <p class="iqdropdown-selection"></p>
+        <div class="iqdropdown-menu">
+            <div class="iqdropdown-menu-option" data-id="item1">
+                <div>
+                <p class="iqdropdown-item">Взрослые</p>
+                </div>
+            </div>
+            <div class="iqdropdown-menu-option" data-id="item2">
+                <div>
+                <p class="iqdropdown-item">Дети</p>
+                </div>
+            </div>
+            <div class="iqdropdown-menu-option" data-id="item3">
+                <div>
+                <p class="iqdropdown-item">Младенцы</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    button.button.button-long Подобрать номер

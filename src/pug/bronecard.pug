@@ -1,26 +1,46 @@
 .bronecard__container.card
-    h1 888
-    label Прибытие
-    input(type="date")
-    label Отбытие
-    input(type="date")
-    label Гости
-        select
-            option Сколько гостей
-            option 1 гость
-            option 2 гостя
-            option 3 гостя
+    .bronecard__row-p
+        <p class="bronecard__number">№ 888 <span class="bronecard__purple">Люкс</span></p>
+        <p class="bronecard__price"> <span class="bronecard__bold">9 990₽</span> в сутки</p>    
+    .bronecard__row
+        .bronecard__row--item
+            h3 Прибытие
+            <input type='text' class="datepicker-here"/>
+        .bronecard__row--item
+            h3 Выезд
+            <input type='text' class="datepicker-here"/>
+    h3 Гости
+    <div class="iqdropdown">
+        <p class="iqdropdown-selection"></p>
+        <div class="iqdropdown-menu">
+            <div class="iqdropdown-menu-option" data-id="item1">
+                <div>
+                <p class="iqdropdown-item">Взрослые</p>
+                </div>
+            </div>
+            <div class="iqdropdown-menu-option" data-id="item2">
+                <div>
+                <p class="iqdropdown-item">Дети</p>
+                </div>
+            </div>
+            <div class="iqdropdown-menu-option" data-id="item3">
+                <div>
+                <p class="iqdropdown-item">Младенцы</p>
+                </div>
+            </div>
+        </div>
+    </div>
     table
         tr 
             td 9 990Р х 4 суток
-            td 39 960Р
+            td.bronecard__data-right 39 960Р
         tr
-            td Сбор за услуги: скидка 2179Р
-            td 0Р
+            td.bronecard__info Сбор за услуги: скидка 2179Р
+            td.bronecard__data-right 0Р
         tr
-            td Сбор за дополнительные услуги
-            td 300Р
+            td.bronecard__info Сбор за дополнительные услуги
+            td.bronecard__data-right 300Р
         tr
-            td Итого 
-            td 38 081Р
-    button.button Забронировать
+            th.bronecard__data-left Итого 
+            th.bronecard__data-right 38 081Р
+    button.button.button-long Забронировать

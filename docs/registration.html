@@ -33,35 +33,40 @@
       <div class="header__container-registration">
 <div class="registrationcard__container card">
   <h1>Регистрация аккаунта</h1>
-  <input type="text">
-  <input type="text">
-  <label>
-    <input type="radio" name="gender"><span>Мужчина</span>
+  <input type="text" placeholder="Имя">
+  <input type="text" placeholder="Фамилия">
+  <label class="radio__container">
+    <input type="radio" name="gender"><span class="radio-checkmark"></span><span>Мужчина</span>
   </label>
-  <label>
-    <input type="radio" name="gender" checked><span>Женщина</span>
+  <label class="radio__container">
+    <input type="radio" name="gender" checked><span class="radio-checkmark"></span><span>Женщина</span>
   </label><br>
-  <label>Дата рождения
-    <input type="date">
-  </label>
-  <label>Данные для входа в сервис
-    <input type="email">
-    <input type="password">
-  </label>
-  <p>Получать спецпредложения</p>
-  <button class="button">Перейти к оплате</button>
-  <p>Уже есть аккаунт на Toxin </p>
-  <button class="button-white">Войти</button>
+  <h3>
+    Дата рождения<input type='text' class="datepicker-here"/></h3>
+  <h3>Данные для входа в сервис
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Пароль">
+  </h3>
+  <label class="switch">
+    <input type="checkbox" checked><span class="slider round"></span>
+  </label><span>Получать спецпредложения</span>
+  <button class="button button-long">Перейти к оплате</button>
+  <div class="registraion--row">
+    <p>Уже есть аккаунт на Toxin </p>
+    <button class="button-white">Войти</button>
+  </div>
 </div>
       </div>
       <div class="header__container-signin">
 <div class="signincard__container card">
   <h1>Войти</h1>
-  <input type="email">
-  <input type="password">
-  <button class="button">Войти </button>
-  <p>Нет аккаунта на Toxin? </p>
-  <button class="button-white">Создать</button>
+  <input type="email" placeholder="Email">
+  <input type="password" placeholder="Пароль">
+  <button class="button button-long">Войти </button>
+  <div class="signin__row">
+    <p>Нет аккаунта на Toxin? </p>
+    <button class="button-white">Создать</button>
+  </div>
 </div>
       </div>
     </div>

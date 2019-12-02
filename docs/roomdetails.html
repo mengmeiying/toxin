@@ -132,38 +132,56 @@
       </div>
       <div class="room__container-right">
 <div class="bronecard__container card">
-  <h1>888</h1>
-  <label>Прибытие</label>
-  <input type="date">
-  <label>Отбытие</label>
-  <input type="date">
-  <label>Гости
-    <select>
-      <option>Сколько гостей</option>
-      <option>1 гость</option>
-      <option>2 гостя</option>
-      <option>3 гостя</option>
-    </select>
-  </label>
+  <div class="bronecard__row-p"><p class="bronecard__number">№ 888 <span class="bronecard__purple">Люкс</span></p>
+<p class="bronecard__price"> <span class="bronecard__bold">9 990₽</span> в сутки</p>    
+  </div>
+  <div class="bronecard__row">
+    <div class="bronecard__row--item">
+      <h3>Прибытие</h3><input type='text' class="datepicker-here"/>
+    </div>
+    <div class="bronecard__row--item">
+      <h3>Выезд</h3><input type='text' class="datepicker-here"/>
+    </div>
+  </div>
+  <h3>Гости</h3><div class="iqdropdown">
+<p class="iqdropdown-selection"></p>
+<div class="iqdropdown-menu">
+<div class="iqdropdown-menu-option" data-id="item1">
+<div>
+<p class="iqdropdown-item">Взрослые</p>
+</div>
+</div>
+<div class="iqdropdown-menu-option" data-id="item2">
+<div>
+<p class="iqdropdown-item">Дети</p>
+</div>
+</div>
+<div class="iqdropdown-menu-option" data-id="item3">
+<div>
+<p class="iqdropdown-item">Младенцы</p>
+</div>
+</div>
+</div>
+</div>
   <table>
     <tr> 
       <td>9 990Р х 4 суток</td>
-      <td>39 960Р</td>
+      <td class="bronecard__data-right">39 960Р</td>
     </tr>
     <tr>
-      <td>Сбор за услуги: скидка 2179Р</td>
-      <td>0Р</td>
+      <td class="bronecard__info">Сбор за услуги: скидка 2179Р</td>
+      <td class="bronecard__data-right">0Р</td>
     </tr>
     <tr>
-      <td>Сбор за дополнительные услуги</td>
-      <td>300Р</td>
+      <td class="bronecard__info">Сбор за дополнительные услуги</td>
+      <td class="bronecard__data-right">300Р</td>
     </tr>
     <tr>
-      <td>Итого </td>
-      <td>38 081Р</td>
+      <th class="bronecard__data-left">Итого </th>
+      <th class="bronecard__data-right">38 081Р</th>
     </tr>
   </table>
-  <button class="button">Забронировать</button>
+  <button class="button button-long">Забронировать</button>
 </div>
       </div>
     </div>

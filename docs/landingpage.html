@@ -33,15 +33,35 @@
       <div class="landing-page__container">
 <div class="findnumber__container card">
   <h1>Найдём номера под ваши пожелания</h1>
-  <label>Прибытие</label>
-  <input type="date">
-  <label>Выезд</label>
-  <input type="date">
-  <label>Гости</label>
-  <select>
-    <option>Сколько гостей</option>
-  </select>
-  <button class="button">Подобрать номер</button>
+  <div class="findnumber__row">
+    <div class="findnumber__row--item">
+      <h3>Прибытие</h3><input type='text' class="datepicker-here"/>
+    </div>
+    <div class="findnumber__row--item">
+      <h3>Выезд</h3><input type='text' class="datepicker-here"/>
+    </div>
+  </div>
+  <h3>Гости</h3><div class="iqdropdown">
+<p class="iqdropdown-selection"></p>
+<div class="iqdropdown-menu">
+<div class="iqdropdown-menu-option" data-id="item1">
+<div>
+<p class="iqdropdown-item">Взрослые</p>
+</div>
+</div>
+<div class="iqdropdown-menu-option" data-id="item2">
+<div>
+<p class="iqdropdown-item">Дети</p>
+</div>
+</div>
+<div class="iqdropdown-menu-option" data-id="item3">
+<div>
+<p class="iqdropdown-item">Младенцы</p>
+</div>
+</div>
+</div>
+</div>
+  <button class="button button-long">Подобрать номер</button>
 </div>
       </div>
       <p class="landing-page__text">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
